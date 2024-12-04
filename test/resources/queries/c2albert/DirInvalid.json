@@ -1,0 +1,73 @@
+{
+	"title": "DirInvalid",
+	"input": {
+		"WHERE": {
+			"AND": [
+				{
+					"GT": {
+						"sections_avg": 80
+					}
+				},
+				{
+					"IS": {
+						"sections_instructor": "*john*"
+					}
+				}
+			]
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"MaxAvg",
+				"MinAvg",
+				"AvgAvg",
+				"CountAvg",
+				"SumAvg"
+			],
+			"ORDER": {
+				"dir": "LEFT",
+				"keys": [
+					"MaxAvg",
+					"MinAvg",
+					"AvgAvg",
+					"CountAvg",
+					"SumAvg"
+				]
+			}
+		},
+		"TRANSFORMATIONS": {
+			"GROUP": [
+				"sections_avg",
+				"sections_dept"
+			],
+			"APPLY": [
+				{
+					"MaxAvg": {
+						"MAX": "sections_avg"
+					}
+				},
+				{
+					"MinAvg": {
+						"MIN": "sections_avg"
+					}
+				},
+				{
+					"AvgAvg": {
+						"AVG": "sections_avg"
+					}
+				},
+				{
+					"CountAvg": {
+						"COUNT": "sections_dept"
+					}
+				},
+				{
+					"SumAvg": {
+						"SUM": "sections_avg"
+					}
+				}
+			]
+		}
+	},
+	"errorExpected": true,
+	"expected": "InsightError"
+}

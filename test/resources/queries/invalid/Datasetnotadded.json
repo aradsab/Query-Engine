@@ -1,0 +1,19 @@
+{
+	"title": "Dataset not added",
+	"input": {
+		"WHERE": {
+			"GT": {
+				"cheese_avg": 97
+			}
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"cheese_dept",
+				"cheese_avg"
+			],
+			"ORDER": "cheese_avg"
+		}
+	},
+	"errorExpected": true,
+	"expected": "InsightError"
+}

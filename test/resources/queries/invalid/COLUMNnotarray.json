@@ -1,0 +1,15 @@
+{
+	"title": "COLUMNnotarray",
+	"input": {
+		"WHERE": {
+			"GT": {
+				"sections_avg": 97
+			}
+		},
+		"OPTIONS": {
+			"COLUMNS": "sections_instructor"
+		}
+	},
+	"errorExpected": true,
+	"expected": "InsightError"
+}

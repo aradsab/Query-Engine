@@ -1,0 +1,43 @@
+{
+	"title": "ApplyEmptyKey",
+	"input": {
+		"WHERE": {
+			"AND": [
+				{
+					"GT": {
+						"sections_avg": 80
+					}
+				},
+				{
+					"IS": {
+						"sections_instructor": "*john*"
+					}
+				}
+			]
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"MaxAvg",
+				"MinAvg"
+			],
+			"ORDER": {
+				"dir": "UP",
+				"keys": [
+					"MaxAvg",
+					"MinAvg"
+				]
+			}
+		},
+		"TRANSFORMATIONS": {
+			"GROUP": [
+				"sections_avg",
+				"sections_dept"
+			],
+			"APPLY": [
+				{}
+			]
+		}
+	},
+	"errorExpected": true,
+	"expected": "InsightError"
+}

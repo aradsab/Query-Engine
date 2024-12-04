@@ -1,0 +1,1269 @@
+{
+	"title": "ApplyKeyBodyMultipleRules(Picks most recent)",
+	"input": {
+		"WHERE": {
+			"AND": [
+				{
+					"GT": {
+						"sections_avg": 80
+					}
+				},
+				{
+					"IS": {
+						"sections_instructor": "*john*"
+					}
+				}
+			]
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"MaxAvg",
+				"MinAvg"
+			],
+			"ORDER": {
+				"dir": "UP",
+				"keys": [
+					"MaxAvg",
+					"MinAvg"
+				]
+			}
+		},
+		"TRANSFORMATIONS": {
+			"GROUP": [
+				"sections_avg",
+				"sections_dept"
+			],
+			"APPLY": [
+				{
+					"MaxAvg": {
+						"MAX": "sections_avg"
+					}
+				},
+				{
+					"MinAvg": {
+						"COUNT": "sections_avg"
+					}
+				}
+			]
+		}
+	},
+	"errorExpected": false,
+	"expected": [
+		{
+			"MaxAvg": 80.02,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 80.04,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 80.09,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 80.11,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 80.12,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 80.12,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 80.12,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 80.13,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 80.15,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 80.17,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 80.17,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 80.19,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 80.21,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 80.25,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 80.33,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 80.34,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 80.43,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 80.47,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 80.5,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 80.5,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 80.54,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 80.56,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 80.6,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 80.61,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 80.64,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 80.65,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 80.67,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 80.67,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 80.7,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 80.7,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 80.71,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 80.73,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 80.76,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 80.78,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 80.78,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 80.79,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 80.79,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 80.86,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 80.89,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 80.9,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 80.95,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 80.96,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 81,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 81,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 81,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 81.03,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 81.05,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 81.07,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 81.09,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 81.23,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 81.23,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 81.25,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 81.27,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 81.29,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 81.29,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 81.29,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 81.3,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 81.31,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 81.31,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 81.31,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 81.36,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 81.37,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 81.41,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 81.42,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 81.47,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 81.47,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 81.49,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 81.5,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 81.53,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 81.59,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 81.6,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 81.62,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 81.63,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 81.65,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 81.67,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 81.71,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 81.73,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 81.76,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 81.76,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 81.88,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 81.97,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 82,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 82,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 82.04,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 82.06,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 82.09,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 82.1,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 82.1,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 82.11,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 82.13,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 82.13,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 82.18,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 82.21,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 82.21,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 82.25,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 82.26,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 82.29,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 82.3,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 82.33,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 82.35,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 82.38,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 82.41,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 82.44,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 82.44,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 82.44,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 82.5,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 82.52,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 82.6,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 82.69,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 82.7,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 82.76,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 82.78,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 82.8,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 82.8,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 82.8,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 82.81,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 82.93,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 83,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 83,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 83.04,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 83.04,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 83.12,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 83.33,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 83.39,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 83.42,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 83.47,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 83.5,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 83.5,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 83.56,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 83.68,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 83.68,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 83.71,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 83.73,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 83.75,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 83.8,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 83.85,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 83.86,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 83.88,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 83.89,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 83.91,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 83.93,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 84,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 84,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 84.06,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 84.06,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 84.08,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 84.2,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 84.2,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 84.21,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 84.25,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 84.25,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 84.27,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 84.29,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 84.3,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 84.33,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 84.36,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 84.38,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 84.43,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 84.44,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 84.46,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 84.5,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 84.56,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 84.6,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 84.67,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 84.7,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 84.72,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 84.75,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 84.75,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 84.8,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 84.81,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 84.82,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 84.82,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 84.82,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 84.85,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 84.85,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 84.88,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 84.91,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 84.91,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 84.93,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 84.94,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 84.99,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 85,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 85,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 85,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 85.04,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 85.08,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 85.08,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 85.14,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 85.17,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 85.22,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 85.3,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 85.39,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 85.42,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 85.47,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 85.5,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 85.55,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 85.56,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 85.57,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 85.6,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 85.6,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 85.6,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 85.71,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 85.72,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 85.73,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 85.75,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 85.81,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 85.87,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 85.92,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 85.92,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 86,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 86,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 86,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 86,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 86,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 86,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 86.05,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 86.08,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 86.14,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 86.21,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 86.25,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 86.25,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 86.29,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 86.31,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 86.32,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 86.41,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 86.5,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 86.5,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 86.54,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 86.54,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 86.54,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 86.57,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 86.63,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 86.67,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 86.73,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 86.75,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 86.9,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 87,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 87,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 87.14,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 87.2,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 87.25,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 87.25,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 87.26,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 87.32,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 87.32,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 87.33,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 87.4,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 87.43,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 87.48,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 87.53,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 87.54,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 87.56,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 87.59,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 87.6,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 87.68,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 87.75,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 87.86,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 87.86,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 88,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 88,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 88,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 88.24,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 88.33,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 88.45,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 88.46,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 88.5,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 88.56,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 88.61,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 88.63,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 88.64,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 88.71,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 88.71,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 88.81,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 88.86,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 89.25,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 89.25,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 89.27,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 89.38,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 89.4,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 89.54,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 89.6,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 89.6,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 89.63,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 89.8,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 90,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 90,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 90,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 90.2,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 90.4,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 90.43,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 90.52,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 90.53,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 90.62,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 90.66,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 90.75,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 92.2,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 92.63,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 92.72,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 93.33,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 94,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 94.26,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 94.75,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 95.25,
+			"MinAvg": 1
+		},
+		{
+			"MaxAvg": 96,
+			"MinAvg": 1
+		}
+	]
+}

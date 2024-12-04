@@ -1,0 +1,1261 @@
+{
+	"title": "SimpleGroup",
+	"input": {
+		"WHERE": {
+			"AND": [
+				{
+					"GT": {
+						"sections_avg": 80
+					}
+				},
+				{
+					"IS": {
+						"sections_instructor": "*john*"
+					}
+				}
+			]
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"MaxAvg",
+				"sections_instructor"
+			]
+		},
+		"TRANSFORMATIONS": {
+			"GROUP": [
+				"sections_avg",
+				"sections_instructor"
+			],
+			"APPLY": [
+				{
+					"MaxAvg": {
+						"MAX": "sections_avg"
+					}
+				}
+			]
+		}
+	},
+	"errorExpected": false,
+	"expected": [
+		{
+			"MaxAvg": 81.47,
+			"sections_instructor": "johnson, gregory"
+		},
+		{
+			"MaxAvg": 82.52,
+			"sections_instructor": "johnson, gregory"
+		},
+		{
+			"MaxAvg": 85.55,
+			"sections_instructor": "johnson, gregory"
+		},
+		{
+			"MaxAvg": 81.03,
+			"sections_instructor": "bass, john;gates, joanne;roecker, inge"
+		},
+		{
+			"MaxAvg": 83.71,
+			"sections_instructor": "bass, john;gates, joanne;roecker, inge"
+		},
+		{
+			"MaxAvg": 80.73,
+			"sections_instructor": "bass, john;neumann, oliver;wagner, george stuart"
+		},
+		{
+			"MaxAvg": 81.49,
+			"sections_instructor": "bass, john;pechet, bill;satterfield, blair"
+		},
+		{
+			"MaxAvg": 85.57,
+			"sections_instructor": "bass, john"
+		},
+		{
+			"MaxAvg": 81.42,
+			"sections_instructor": "johnson, gregory"
+		},
+		{
+			"MaxAvg": 86.08,
+			"sections_instructor": "johnson, gregory"
+		},
+		{
+			"MaxAvg": 81.23,
+			"sections_instructor": "johnson, gregory"
+		},
+		{
+			"MaxAvg": 84.46,
+			"sections_instructor": "johnson, gregory"
+		},
+		{
+			"MaxAvg": 82.11,
+			"sections_instructor": "johnson, gregory"
+		},
+		{
+			"MaxAvg": 81.09,
+			"sections_instructor": "cole, raymond john"
+		},
+		{
+			"MaxAvg": 82.1,
+			"sections_instructor": "johnson, gregory"
+		},
+		{
+			"MaxAvg": 82.44,
+			"sections_instructor": "johnson, gregory"
+		},
+		{
+			"MaxAvg": 85.08,
+			"sections_instructor": "johnson, gregory"
+		},
+		{
+			"MaxAvg": 80.12,
+			"sections_instructor": "johnson, gregory"
+		},
+		{
+			"MaxAvg": 81.36,
+			"sections_instructor": "bass, john"
+		},
+		{
+			"MaxAvg": 81.31,
+			"sections_instructor": "bass, john"
+		},
+		{
+			"MaxAvg": 80.54,
+			"sections_instructor": "bass, john;soules, matthew"
+		},
+		{
+			"MaxAvg": 80.19,
+			"sections_instructor": "bass, john;lewis, martin"
+		},
+		{
+			"MaxAvg": 80.34,
+			"sections_instructor": "bass, john"
+		},
+		{
+			"MaxAvg": 84.08,
+			"sections_instructor": "bass, john;roecker, inge;satterfield, blair"
+		},
+		{
+			"MaxAvg": 81.63,
+			"sections_instructor": "bass, john"
+		},
+		{
+			"MaxAvg": 82.8,
+			"sections_instructor": "bass, john"
+		},
+		{
+			"MaxAvg": 84.2,
+			"sections_instructor": "bass, john;macdonald, christopher;soules, matthew"
+		},
+		{
+			"MaxAvg": 84.94,
+			"sections_instructor": "johnson, gregory"
+		},
+		{
+			"MaxAvg": 83.47,
+			"sections_instructor": "johnson, gregory"
+		},
+		{
+			"MaxAvg": 81.3,
+			"sections_instructor": "johnson, gregory"
+		},
+		{
+			"MaxAvg": 86.25,
+			"sections_instructor": "bass, john"
+		},
+		{
+			"MaxAvg": 82.25,
+			"sections_instructor": "cole, raymond john"
+		},
+		{
+			"MaxAvg": 81,
+			"sections_instructor": "o'brian, john"
+		},
+		{
+			"MaxAvg": 82.35,
+			"sections_instructor": "o'brian, john"
+		},
+		{
+			"MaxAvg": 80.13,
+			"sections_instructor": "o'brian, john"
+		},
+		{
+			"MaxAvg": 84.67,
+			"sections_instructor": "o'brian, john"
+		},
+		{
+			"MaxAvg": 86.54,
+			"sections_instructor": "o'brian, john"
+		},
+		{
+			"MaxAvg": 84.91,
+			"sections_instructor": "johnston, judith rae"
+		},
+		{
+			"MaxAvg": 80.71,
+			"sections_instructor": "ries, john"
+		},
+		{
+			"MaxAvg": 82,
+			"sections_instructor": "ries, john"
+		},
+		{
+			"MaxAvg": 81.41,
+			"sections_instructor": "ries, john"
+		},
+		{
+			"MaxAvg": 85.75,
+			"sections_instructor": "ganders, fred r;gosline, john"
+		},
+		{
+			"MaxAvg": 81.05,
+			"sections_instructor": "steeves, john"
+		},
+		{
+			"MaxAvg": 83.68,
+			"sections_instructor": "steeves, john"
+		},
+		{
+			"MaxAvg": 89.8,
+			"sections_instructor": "allan, douglas;baimbridge, kenneth;clee, susanne michelle;haas, kurt;hammond, geoffrey lewis;johnson, james;kieffer, tim;loewen, christopher;luciani, dan;mason, barry;osborne, salma;tanentzapf, guy"
+		},
+		{
+			"MaxAvg": 88,
+			"sections_instructor": "johnson, james"
+		},
+		{
+			"MaxAvg": 86.5,
+			"sections_instructor": "johnson, james"
+		},
+		{
+			"MaxAvg": 87.25,
+			"sections_instructor": "johnson, james"
+		},
+		{
+			"MaxAvg": 88.63,
+			"sections_instructor": "johnson, james"
+		},
+		{
+			"MaxAvg": 81.31,
+			"sections_instructor": "grace, john ross"
+		},
+		{
+			"MaxAvg": 81.6,
+			"sections_instructor": "bi, xiaotao;ellis, naoko;grace, john ross;taghipour, fariborz"
+		},
+		{
+			"MaxAvg": 81.25,
+			"sections_instructor": "johnson, kayli;lindenberg, erin"
+		},
+		{
+			"MaxAvg": 85.6,
+			"sections_instructor": "isaacson, michael d;johnson, gregory;staub-french, sheryl"
+		},
+		{
+			"MaxAvg": 83.04,
+			"sections_instructor": "berube, pierre;isaacson, michael d;johnson, gregory"
+		},
+		{
+			"MaxAvg": 83.73,
+			"sections_instructor": "isaacson, michael d;johnson, gregory;staub-french, sheryl"
+		},
+		{
+			"MaxAvg": 82.06,
+			"sections_instructor": "hall, eric;isaacson, michael d;johnson, gregory"
+		},
+		{
+			"MaxAvg": 80.64,
+			"sections_instructor": "berube, pierre;isaacson, michael d;johnson, gregory"
+		},
+		{
+			"MaxAvg": 80.76,
+			"sections_instructor": "johnson, gregory"
+		},
+		{
+			"MaxAvg": 81.23,
+			"sections_instructor": "howie, john"
+		},
+		{
+			"MaxAvg": 80.33,
+			"sections_instructor": "howie, john"
+		},
+		{
+			"MaxAvg": 82.13,
+			"sections_instructor": "fannin, r jonathan;howie, john;shuttle, dawn;wijewickreme, dharmapriya"
+		},
+		{
+			"MaxAvg": 82.18,
+			"sections_instructor": "howie, john;johnson, gregory;lo, kwang victor;ventura, carlos estuardo"
+		},
+		{
+			"MaxAvg": 82.38,
+			"sections_instructor": "atwater, james;howie, john;lence, barbara jean;ventura, carlos estuardo"
+		},
+		{
+			"MaxAvg": 86.54,
+			"sections_instructor": "howie, john;mavinic, donald;stiemer, siegfried"
+		},
+		{
+			"MaxAvg": 81.73,
+			"sections_instructor": "johnson, gregory"
+		},
+		{
+			"MaxAvg": 84.99,
+			"sections_instructor": "johnson, gregory"
+		},
+		{
+			"MaxAvg": 84.82,
+			"sections_instructor": "johnson, gregory"
+		},
+		{
+			"MaxAvg": 81.31,
+			"sections_instructor": "johnson, gregory"
+		},
+		{
+			"MaxAvg": 83.39,
+			"sections_instructor": "elwood, kenneth john"
+		},
+		{
+			"MaxAvg": 85.56,
+			"sections_instructor": "elwood, kenneth john"
+		},
+		{
+			"MaxAvg": 84.25,
+			"sections_instructor": "elwood, kenneth john"
+		},
+		{
+			"MaxAvg": 82,
+			"sections_instructor": "elwood, kenneth john"
+		},
+		{
+			"MaxAvg": 84.36,
+			"sections_instructor": "elwood, kenneth john"
+		},
+		{
+			"MaxAvg": 81.29,
+			"sections_instructor": "elwood, kenneth john"
+		},
+		{
+			"MaxAvg": 80.11,
+			"sections_instructor": "elwood, kenneth john"
+		},
+		{
+			"MaxAvg": 88.71,
+			"sections_instructor": "elwood, kenneth john"
+		},
+		{
+			"MaxAvg": 81.71,
+			"sections_instructor": "howie, john;taiebat, mahdi;wijewickreme, dharmapriya"
+		},
+		{
+			"MaxAvg": 83.75,
+			"sections_instructor": "fannin, r jonathan;howie, john;taiebat, mahdi;wijewickreme, dharmapriya"
+		},
+		{
+			"MaxAvg": 82.33,
+			"sections_instructor": "howie, john;wijewickreme, dharmapriya"
+		},
+		{
+			"MaxAvg": 81.27,
+			"sections_instructor": "howie, john;wijewickreme, dharmapriya"
+		},
+		{
+			"MaxAvg": 83.42,
+			"sections_instructor": "howie, john;wijewickreme, dharmapriya"
+		},
+		{
+			"MaxAvg": 82.04,
+			"sections_instructor": "johnson, carl"
+		},
+		{
+			"MaxAvg": 82.81,
+			"sections_instructor": "johnson, carl"
+		},
+		{
+			"MaxAvg": 86.21,
+			"sections_instructor": "johnston, dawn"
+		},
+		{
+			"MaxAvg": 84.85,
+			"sections_instructor": "johnston, dawn"
+		},
+		{
+			"MaxAvg": 84.82,
+			"sections_instructor": "johnston, dawn"
+		},
+		{
+			"MaxAvg": 94,
+			"sections_instructor": "carter, john"
+		},
+		{
+			"MaxAvg": 92.72,
+			"sections_instructor": "carter, john"
+		},
+		{
+			"MaxAvg": 94.26,
+			"sections_instructor": "carter, john"
+		},
+		{
+			"MaxAvg": 96,
+			"sections_instructor": "carter, john"
+		},
+		{
+			"MaxAvg": 87.86,
+			"sections_instructor": "carter, john"
+		},
+		{
+			"MaxAvg": 88.45,
+			"sections_instructor": "carter, john"
+		},
+		{
+			"MaxAvg": 86.32,
+			"sections_instructor": "arefifar, seyed ali;botman, pieter;fels, s sidney;grecu, cristian sorin;kruchten, philippe;lee, terry;lusina, paul;madden, john;najarian, siamak;tang, shuo"
+		},
+		{
+			"MaxAvg": 85.92,
+			"sections_instructor": "arefifar, seyed ali;botman, pieter;fels, s sidney;grecu, cristian sorin;kruchten, philippe;lee, terry;lusina, paul;madden, john;najarian, siamak;tang, shuo"
+		},
+		{
+			"MaxAvg": 82.8,
+			"sections_instructor": "waterfield, john douglas"
+		},
+		{
+			"MaxAvg": 83,
+			"sections_instructor": "waterfield, john douglas"
+		},
+		{
+			"MaxAvg": 85,
+			"sections_instructor": "waterfield, john douglas"
+		},
+		{
+			"MaxAvg": 86.5,
+			"sections_instructor": "waterfield, john douglas"
+		},
+		{
+			"MaxAvg": 86,
+			"sections_instructor": "waterfield, john douglas"
+		},
+		{
+			"MaxAvg": 89.25,
+			"sections_instructor": "cambruzzi, john;coil, jeffrey martin;corber, ron;fraser, john gordon"
+		},
+		{
+			"MaxAvg": 87.59,
+			"sections_instructor": "johnson, jennifer"
+		},
+		{
+			"MaxAvg": 90.52,
+			"sections_instructor": "johnson, jennifer"
+		},
+		{
+			"MaxAvg": 90.53,
+			"sections_instructor": "carter, john"
+		},
+		{
+			"MaxAvg": 87.68,
+			"sections_instructor": "madden, john"
+		},
+		{
+			"MaxAvg": 87.86,
+			"sections_instructor": "madden, john"
+		},
+		{
+			"MaxAvg": 86.29,
+			"sections_instructor": "madden, john"
+		},
+		{
+			"MaxAvg": 86.9,
+			"sections_instructor": "madden, john"
+		},
+		{
+			"MaxAvg": 86.63,
+			"sections_instructor": "madden, john"
+		},
+		{
+			"MaxAvg": 87.56,
+			"sections_instructor": "madden, john"
+		},
+		{
+			"MaxAvg": 85.73,
+			"sections_instructor": "madden, john"
+		},
+		{
+			"MaxAvg": 86.31,
+			"sections_instructor": "arefifar, seyed ali;botman, pieter;fels, s sidney;grecu, cristian sorin;kruchten, philippe;lee, terry;lusina, paul;madden, john;najarian, siamak;tang, shuo"
+		},
+		{
+			"MaxAvg": 87.32,
+			"sections_instructor": "arefifar, seyed ali;botman, pieter;fels, s sidney;grecu, cristian sorin;kruchten, philippe;lee, terry;lusina, paul;madden, john;najarian, siamak;tang, shuo"
+		},
+		{
+			"MaxAvg": 84.88,
+			"sections_instructor": "arefifar, seyed ali;botman, pieter;fels, s sidney;grecu, cristian sorin;kruchten, philippe;lee, terry;lusina, paul;madden, john;najarian, siamak;tang, shuo"
+		},
+		{
+			"MaxAvg": 89.54,
+			"sections_instructor": "arefifar, seyed ali;botman, pieter;fels, s sidney;grecu, cristian sorin;kruchten, philippe;lee, terry;lusina, paul;madden, john;najarian, siamak;tang, shuo"
+		},
+		{
+			"MaxAvg": 80.5,
+			"sections_instructor": "cooper, john"
+		},
+		{
+			"MaxAvg": 82.41,
+			"sections_instructor": "johnson, lee"
+		},
+		{
+			"MaxAvg": 81.29,
+			"sections_instructor": "johnstone, tiffany"
+		},
+		{
+			"MaxAvg": 81.76,
+			"sections_instructor": "cooper, john"
+		},
+		{
+			"MaxAvg": 84.75,
+			"sections_instructor": "cooper, john"
+		},
+		{
+			"MaxAvg": 81.65,
+			"sections_instructor": "johnson, mark;lipsen, michael"
+		},
+		{
+			"MaxAvg": 83.88,
+			"sections_instructor": "ivanochko, tara;johnson, mark"
+		},
+		{
+			"MaxAvg": 85.81,
+			"sections_instructor": "johnson, mark"
+		},
+		{
+			"MaxAvg": 80.9,
+			"sections_instructor": "johnson, catherine"
+		},
+		{
+			"MaxAvg": 83.33,
+			"sections_instructor": "johnson, catherine"
+		},
+		{
+			"MaxAvg": 84.2,
+			"sections_instructor": "johnson, catherine;mohit, surdas"
+		},
+		{
+			"MaxAvg": 88.46,
+			"sections_instructor": "egan, john patrick"
+		},
+		{
+			"MaxAvg": 82.13,
+			"sections_instructor": "egan, john patrick"
+		},
+		{
+			"MaxAvg": 88.5,
+			"sections_instructor": "cheung, wai lung;christensen, villy;close, david;pauly, daniel;pitcher, tony;sumaila, ussif rashid;trites, andrew;vincent, amanda;walters, carl john"
+		},
+		{
+			"MaxAvg": 85.17,
+			"sections_instructor": "cheung, wai lung;christensen, villy;close, david;mcallister, murdoch;pauly, daniel;pitcher, tony;sumaila, ussif rashid;trites, andrew;vincent, amanda;walters, carl john"
+		},
+		{
+			"MaxAvg": 82.44,
+			"sections_instructor": "johnson, phyllis"
+		},
+		{
+			"MaxAvg": 80.47,
+			"sections_instructor": "culbert, john"
+		},
+		{
+			"MaxAvg": 81.59,
+			"sections_instructor": "worrall, john"
+		},
+		{
+			"MaxAvg": 84.7,
+			"sections_instructor": "worrall, john"
+		},
+		{
+			"MaxAvg": 80.79,
+			"sections_instructor": "bull, gary;marshall, peter;nelson, john douglas"
+		},
+		{
+			"MaxAvg": 83.89,
+			"sections_instructor": "bull, gary;nelson, john douglas"
+		},
+		{
+			"MaxAvg": 85.3,
+			"sections_instructor": "bull, gary;nelson, john douglas"
+		},
+		{
+			"MaxAvg": 82.29,
+			"sections_instructor": "bull, gary;nelson, john douglas"
+		},
+		{
+			"MaxAvg": 80.56,
+			"sections_instructor": "bull, gary;marshall, peter;nelson, john douglas"
+		},
+		{
+			"MaxAvg": 82.09,
+			"sections_instructor": "innes, john"
+		},
+		{
+			"MaxAvg": 81.97,
+			"sections_instructor": "innes, john"
+		},
+		{
+			"MaxAvg": 80.04,
+			"sections_instructor": "nelson, john douglas"
+		},
+		{
+			"MaxAvg": 84.91,
+			"sections_instructor": "nelson, john douglas"
+		},
+		{
+			"MaxAvg": 83.12,
+			"sections_instructor": "nelson, john douglas"
+		},
+		{
+			"MaxAvg": 80.6,
+			"sections_instructor": "nelson, john douglas"
+		},
+		{
+			"MaxAvg": 87.14,
+			"sections_instructor": "de long, deborah;nelson, john douglas"
+		},
+		{
+			"MaxAvg": 84.93,
+			"sections_instructor": "de long, deborah;nelson, john douglas"
+		},
+		{
+			"MaxAvg": 85.3,
+			"sections_instructor": "richardson, john"
+		},
+		{
+			"MaxAvg": 82.6,
+			"sections_instructor": "richardson, john"
+		},
+		{
+			"MaxAvg": 84,
+			"sections_instructor": "moore, robert daniel;richardson, john"
+		},
+		{
+			"MaxAvg": 85.6,
+			"sections_instructor": "moore, robert daniel;richardson, john"
+		},
+		{
+			"MaxAvg": 81.67,
+			"sections_instructor": "richardson, john"
+		},
+		{
+			"MaxAvg": 85,
+			"sections_instructor": "moore, robert daniel;richardson, john"
+		},
+		{
+			"MaxAvg": 81.07,
+			"sections_instructor": "catungal, john paul"
+		},
+		{
+			"MaxAvg": 80.5,
+			"sections_instructor": "beatty, john henry"
+		},
+		{
+			"MaxAvg": 88.71,
+			"sections_instructor": "green, timothy john"
+		},
+		{
+			"MaxAvg": 85.6,
+			"sections_instructor": "howie, john;isaacson, michael d"
+		},
+		{
+			"MaxAvg": 85.08,
+			"sections_instructor": "caldwell, john;lee, sandra marjorie"
+		},
+		{
+			"MaxAvg": 85.92,
+			"sections_instructor": "caldwell, john;lee, sandra marjorie"
+		},
+		{
+			"MaxAvg": 85.04,
+			"sections_instructor": "caldwell, john;lee, sandra marjorie"
+		},
+		{
+			"MaxAvg": 84.44,
+			"sections_instructor": "caldwell, john"
+		},
+		{
+			"MaxAvg": 80.89,
+			"sections_instructor": "haggerty, john"
+		},
+		{
+			"MaxAvg": 80.7,
+			"sections_instructor": "macdonald, john"
+		},
+		{
+			"MaxAvg": 82.93,
+			"sections_instructor": "macdonald, john"
+		},
+		{
+			"MaxAvg": 84.82,
+			"sections_instructor": "macdonald, john"
+		},
+		{
+			"MaxAvg": 85.22,
+			"sections_instructor": "macdonald, john"
+		},
+		{
+			"MaxAvg": 80.78,
+			"sections_instructor": "macdonald, john"
+		},
+		{
+			"MaxAvg": 82.78,
+			"sections_instructor": "macdonald, john"
+		},
+		{
+			"MaxAvg": 84.5,
+			"sections_instructor": "macdonald, john"
+		},
+		{
+			"MaxAvg": 84.72,
+			"sections_instructor": "macdonald, john"
+		},
+		{
+			"MaxAvg": 86.73,
+			"sections_instructor": "macdonald, john"
+		},
+		{
+			"MaxAvg": 80.65,
+			"sections_instructor": "macdonald, john"
+		},
+		{
+			"MaxAvg": 82.5,
+			"sections_instructor": "kion, tracy;nomellini, john"
+		},
+		{
+			"MaxAvg": 84.21,
+			"sections_instructor": "beatty, john"
+		},
+		{
+			"MaxAvg": 81.29,
+			"sections_instructor": "beatty, john"
+		},
+		{
+			"MaxAvg": 83.68,
+			"sections_instructor": "beatty, john"
+		},
+		{
+			"MaxAvg": 80.43,
+			"sections_instructor": "beatty, john"
+		},
+		{
+			"MaxAvg": 87.26,
+			"sections_instructor": "nomellini, john;smith, karen"
+		},
+		{
+			"MaxAvg": 86.57,
+			"sections_instructor": "harder, kenneth;johnson, pauline"
+		},
+		{
+			"MaxAvg": 89.4,
+			"sections_instructor": "harder, kenneth;johnson, pauline"
+		},
+		{
+			"MaxAvg": 88,
+			"sections_instructor": "harder, kenneth;johnson, pauline"
+		},
+		{
+			"MaxAvg": 88.24,
+			"sections_instructor": "harder, kenneth;johnson, pauline"
+		},
+		{
+			"MaxAvg": 89.38,
+			"sections_instructor": "johnson, pauline"
+		},
+		{
+			"MaxAvg": 85.39,
+			"sections_instructor": "harder, kenneth;johnson, pauline"
+		},
+		{
+			"MaxAvg": 88.61,
+			"sections_instructor": "harder, kenneth;johnson, pauline"
+		},
+		{
+			"MaxAvg": 83.8,
+			"sections_instructor": "johnson, pauline"
+		},
+		{
+			"MaxAvg": 82.26,
+			"sections_instructor": "meech, john"
+		},
+		{
+			"MaxAvg": 84,
+			"sections_instructor": "littleford, james;nesselroad, brian;van deursen, john"
+		},
+		{
+			"MaxAvg": 86.25,
+			"sections_instructor": "read, jesse;van deursen, john"
+		},
+		{
+			"MaxAvg": 92.63,
+			"sections_instructor": "van deursen, john"
+		},
+		{
+			"MaxAvg": 84.33,
+			"sections_instructor": "van deursen, john"
+		},
+		{
+			"MaxAvg": 83.5,
+			"sections_instructor": "van deursen, john"
+		},
+		{
+			"MaxAvg": 85.42,
+			"sections_instructor": "taylor, robert;van deursen, john"
+		},
+		{
+			"MaxAvg": 85.71,
+			"sections_instructor": "van deursen, john"
+		},
+		{
+			"MaxAvg": 81,
+			"sections_instructor": "van deursen, john"
+		},
+		{
+			"MaxAvg": 84.27,
+			"sections_instructor": "van deursen, john"
+		},
+		{
+			"MaxAvg": 93.33,
+			"sections_instructor": "van deursen, john"
+		},
+		{
+			"MaxAvg": 87,
+			"sections_instructor": "fisher, alexander john"
+		},
+		{
+			"MaxAvg": 88,
+			"sections_instructor": "fisher, alexander john;oke, doreen"
+		},
+		{
+			"MaxAvg": 87.4,
+			"sections_instructor": "fisher, alexander john;oke, doreen"
+		},
+		{
+			"MaxAvg": 87.33,
+			"sections_instructor": "fisher, alexander john;oke, doreen"
+		},
+		{
+			"MaxAvg": 89.6,
+			"sections_instructor": "fisher, alexander john;oke, doreen"
+		},
+		{
+			"MaxAvg": 89.63,
+			"sections_instructor": "fisher, alexander john;oke, doreen"
+		},
+		{
+			"MaxAvg": 88.56,
+			"sections_instructor": "fisher, alexander john;oke, doreen"
+		},
+		{
+			"MaxAvg": 80.79,
+			"sections_instructor": "affleck, frances;jackson, cathryn;marshall, helga;oliffe, john;valkenier, beverley"
+		},
+		{
+			"MaxAvg": 81.88,
+			"sections_instructor": "affleck, frances;esson, lynne;jackson, cathryn;mislang, jonathan;oliffe, john;rea, gail;valkenier, beverley"
+		},
+		{
+			"MaxAvg": 81.37,
+			"sections_instructor": "affleck, frances;oliffe, john"
+		},
+		{
+			"MaxAvg": 87.48,
+			"sections_instructor": "oliffe, john"
+		},
+		{
+			"MaxAvg": 84.6,
+			"sections_instructor": "johnson, joy louise;rodney, patricia"
+		},
+		{
+			"MaxAvg": 80.17,
+			"sections_instructor": "kizhakkedathu, jayachandran;o'kusky, john"
+		},
+		{
+			"MaxAvg": 84.25,
+			"sections_instructor": "o'kusky, john;walker, david"
+		},
+		{
+			"MaxAvg": 81.47,
+			"sections_instructor": "o'kusky, john;walker, david"
+		},
+		{
+			"MaxAvg": 83.5,
+			"sections_instructor": "o'kusky, john;walker, david"
+		},
+		{
+			"MaxAvg": 87.32,
+			"sections_instructor": "au, nicholas;bruyere, helene;carter, cedric john;coupland, robert william;mcnagny, kelly marshall;medvedev, nadejda;schubert, peter;scott, mark;skinnider, brian;vercauteren, suzanne"
+		},
+		{
+			"MaxAvg": 84.43,
+			"sections_instructor": "au, nicholas;broady, raewyn;bruyere, helene;carter, cedric john;coupland, robert william;mcnagny, kelly marshall;medvedev, nadejda;schubert, peter;scott, mark;serrano, katherine;vercauteren, suzanne"
+		},
+		{
+			"MaxAvg": 84.06,
+			"sections_instructor": "au, nicholas;broady, raewyn;bruyere, helene;carter, cedric john;coupland, robert william;mcnagny, kelly marshall;medvedev, nadejda;schubert, peter;scott, mark;serrano, katherine;vercauteren, suzanne"
+		},
+		{
+			"MaxAvg": 82.21,
+			"sections_instructor": "au, nicholas;bruyere, helene;carter, cedric john;conway, edward;mcnagny, kelly marshall;medvedev, nadejda;roland, kristine;schubert, peter;scott, mark;skinnider, brian;vercauteren, suzanne"
+		},
+		{
+			"MaxAvg": 88.81,
+			"sections_instructor": "carter, cedric john"
+		},
+		{
+			"MaxAvg": 86,
+			"sections_instructor": "au, nicholas;broady, raewyn;bruyere, helene;carter, cedric john;coupland, robert william;mcnagny, kelly marshall;medvedev, nadejda;schubert, peter;scott, mark;serrano, katherine;vercauteren, suzanne"
+		},
+		{
+			"MaxAvg": 80.67,
+			"sections_instructor": "o'kusky, john"
+		},
+		{
+			"MaxAvg": 83.91,
+			"sections_instructor": "dooley, kent;frohlich, jiri;hill, john stuart;holmes, daniel;keller, bernd;mattman, andre;monsalve, maria victoria;nimmo, michael;pudek, morris;schreiber, william;tomalty, cheryl;vallance, hilary"
+		},
+		{
+			"MaxAvg": 81,
+			"sections_instructor": "casey, brett;dooley, kent;frohlich, jiri;halstead, anne catherine;hill, john stuart;holmes, daniel;keller, bernd;mattman, andre;nimmo, michael;pudek, morris;schreiber, william;tomalty, cheryl;urquhart, nadine;vallance, hilary"
+		},
+		{
+			"MaxAvg": 80.78,
+			"sections_instructor": "dooley, kent;frohlich, jiri;hill, john stuart;holmes, daniel;mattman, andre;monsalve, maria victoria;nimmo, michael;pudek, morris;schreiber, william;tomalty, cheryl;vallance, hilary"
+		},
+		{
+			"MaxAvg": 85.87,
+			"sections_instructor": "casey, brett;dooley, kent;frohlich, jiri;halstead, anne catherine;hill, john stuart;holmes, daniel;keller, bernd;mattman, andre;nimmo, michael;pudek, morris;schreiber, william;tomalty, cheryl;urquhart, nadine;vallance, hilary"
+		},
+		{
+			"MaxAvg": 83.85,
+			"sections_instructor": "ansermino, john mark;barr, alasdair;bernatchez, pascal;bhagavatula, sastry;choi, peter tsz lung;etminan, mahyar;griesdale, donald e;hackett, tillie-louise;horne, andrew;laher, ismail;preston, roanne;schwarz, stephan;warriner, charles brian;wright, james"
+		},
+		{
+			"MaxAvg": 82.76,
+			"sections_instructor": "ansermino, john mark;barr, alasdair;bernatchez, pascal;bhagavatula, sastry;choi, peter tsz lung;etminan, mahyar;fedida, david;griesdale, donald e;hackett, tillie-louise;horne, andrew;kurata, harley;laher, ismail;preston, roanne;schwarz, stephan;walker, michael j a;warriner, charles brian;wright, james"
+		},
+		{
+			"MaxAvg": 80.25,
+			"sections_instructor": "beatty, john henry"
+		},
+		{
+			"MaxAvg": 82.7,
+			"sections_instructor": "beatty, john henry"
+		},
+		{
+			"MaxAvg": 80.15,
+			"sections_instructor": "aldrich, john;celler, anna;duzenli, cheryl;mackay, alexander;tchvialeva, lioudmila;xiang, qing-san"
+		},
+		{
+			"MaxAvg": 82.1,
+			"sections_instructor": "aldrich, john;celler, anna;duzenli, cheryl;mackay, alexander;tchvialeva, lioudmila;xiang, qing-san"
+		},
+		{
+			"MaxAvg": 92.2,
+			"sections_instructor": "ng, john"
+		},
+		{
+			"MaxAvg": 86,
+			"sections_instructor": "friedmann, john;sandercock, leonie"
+		},
+		{
+			"MaxAvg": 89.25,
+			"sections_instructor": "friedmann, john"
+		},
+		{
+			"MaxAvg": 86.67,
+			"sections_instructor": "friedmann, john;sandercock, leonie"
+		},
+		{
+			"MaxAvg": 83,
+			"sections_instructor": "friedmann, john"
+		},
+		{
+			"MaxAvg": 87,
+			"sections_instructor": "friedmann, john"
+		},
+		{
+			"MaxAvg": 87.25,
+			"sections_instructor": "friedmann, john"
+		},
+		{
+			"MaxAvg": 90,
+			"sections_instructor": "friedmann, john"
+		},
+		{
+			"MaxAvg": 87.6,
+			"sections_instructor": "friedmann, john"
+		},
+		{
+			"MaxAvg": 84.75,
+			"sections_instructor": "friedmann, john"
+		},
+		{
+			"MaxAvg": 84.38,
+			"sections_instructor": "johnston, richard g"
+		},
+		{
+			"MaxAvg": 85,
+			"sections_instructor": "johnston, richard g"
+		},
+		{
+			"MaxAvg": 85.47,
+			"sections_instructor": "johnston, richard g"
+		},
+		{
+			"MaxAvg": 86,
+			"sections_instructor": "johnston, richard g"
+		},
+		{
+			"MaxAvg": 87.54,
+			"sections_instructor": "walker, lawrence john"
+		},
+		{
+			"MaxAvg": 86.54,
+			"sections_instructor": "walker, lawrence john"
+		},
+		{
+			"MaxAvg": 88.64,
+			"sections_instructor": "walker, lawrence john"
+		},
+		{
+			"MaxAvg": 87.43,
+			"sections_instructor": "walker, lawrence john"
+		},
+		{
+			"MaxAvg": 88.33,
+			"sections_instructor": "johnston, charlotte"
+		},
+		{
+			"MaxAvg": 86.14,
+			"sections_instructor": "johnston, charlotte"
+		},
+		{
+			"MaxAvg": 88.86,
+			"sections_instructor": "johnston, charlotte"
+		},
+		{
+			"MaxAvg": 89.6,
+			"sections_instructor": "johnston, charlotte"
+		},
+		{
+			"MaxAvg": 94.75,
+			"sections_instructor": "wagner, john"
+		},
+		{
+			"MaxAvg": 95.25,
+			"sections_instructor": "wagner, john"
+		},
+		{
+			"MaxAvg": 87.75,
+			"sections_instructor": "johnston, charlotte"
+		},
+		{
+			"MaxAvg": 80.61,
+			"sections_instructor": "harris, leila;robinson, john"
+		},
+		{
+			"MaxAvg": 85.14,
+			"sections_instructor": "robinson, john"
+		},
+		{
+			"MaxAvg": 83.86,
+			"sections_instructor": "robinson, john"
+		},
+		{
+			"MaxAvg": 82.44,
+			"sections_instructor": "robinson, john;satterfield, theresa"
+		},
+		{
+			"MaxAvg": 82.21,
+			"sections_instructor": "robinson, john"
+		},
+		{
+			"MaxAvg": 81.76,
+			"sections_instructor": "robinson, john"
+		},
+		{
+			"MaxAvg": 86.75,
+			"sections_instructor": "harris, leila;johnson, mark"
+		},
+		{
+			"MaxAvg": 86,
+			"sections_instructor": "harris, leila;johnson, mark"
+		},
+		{
+			"MaxAvg": 81.5,
+			"sections_instructor": "sherman, john;steyn, douw gerbrand"
+		},
+		{
+			"MaxAvg": 81.62,
+			"sections_instructor": "dunham, bruce;jandciu, eric;steeves, john;stewart, jaclyn"
+		},
+		{
+			"MaxAvg": 80.12,
+			"sections_instructor": "dunham, bruce;jandciu, eric;steeves, john;stewart, jaclyn"
+		},
+		{
+			"MaxAvg": 82.3,
+			"sections_instructor": "johnson, shelly"
+		},
+		{
+			"MaxAvg": 90.66,
+			"sections_instructor": "johnston, patricia"
+		},
+		{
+			"MaxAvg": 90.4,
+			"sections_instructor": "johnston, patricia"
+		},
+		{
+			"MaxAvg": 86.05,
+			"sections_instructor": "johnson, shelly"
+		},
+		{
+			"MaxAvg": 90,
+			"sections_instructor": "johnson, shelly"
+		},
+		{
+			"MaxAvg": 90.62,
+			"sections_instructor": "johnson, shelly"
+		},
+		{
+			"MaxAvg": 85.72,
+			"sections_instructor": "johnson, shelly"
+		},
+		{
+			"MaxAvg": 89.27,
+			"sections_instructor": "johnson, shelly"
+		},
+		{
+			"MaxAvg": 83.04,
+			"sections_instructor": "johnson, shelly"
+		},
+		{
+			"MaxAvg": 90.2,
+			"sections_instructor": "johnson, shelly"
+		},
+		{
+			"MaxAvg": 84.29,
+			"sections_instructor": "johnson, shelly"
+		},
+		{
+			"MaxAvg": 82.69,
+			"sections_instructor": "johnson, shelly"
+		},
+		{
+			"MaxAvg": 86.41,
+			"sections_instructor": "johnson, shelly"
+		},
+		{
+			"MaxAvg": 80.12,
+			"sections_instructor": "ries, john"
+		},
+		{
+			"MaxAvg": 80.67,
+			"sections_instructor": "ries, john"
+		},
+		{
+			"MaxAvg": 80.09,
+			"sections_instructor": "ries, john"
+		},
+		{
+			"MaxAvg": 80.02,
+			"sections_instructor": "ries, john"
+		},
+		{
+			"MaxAvg": 80.96,
+			"sections_instructor": "ries, john"
+		},
+		{
+			"MaxAvg": 80.7,
+			"sections_instructor": "peacock, stuart;spinelli, john"
+		},
+		{
+			"MaxAvg": 82.8,
+			"sections_instructor": "regier, dean;spinelli, john"
+		},
+		{
+			"MaxAvg": 86,
+			"sections_instructor": "peacock, stuart;spinelli, john"
+		},
+		{
+			"MaxAvg": 84.56,
+			"sections_instructor": "peacock, stuart;spinelli, john"
+		},
+		{
+			"MaxAvg": 83.56,
+			"sections_instructor": "peacock, stuart;spinelli, john"
+		},
+		{
+			"MaxAvg": 87.53,
+			"sections_instructor": "kazanjian, arminee;miller, john;schmidt, brian"
+		},
+		{
+			"MaxAvg": 80.86,
+			"sections_instructor": "petkau, a john"
+		},
+		{
+			"MaxAvg": 80.17,
+			"sections_instructor": "johnston, kirsty"
+		},
+		{
+			"MaxAvg": 84.81,
+			"sections_instructor": "cooper, john"
+		},
+		{
+			"MaxAvg": 83.93,
+			"sections_instructor": "cooper, john"
+		},
+		{
+			"MaxAvg": 84.3,
+			"sections_instructor": "cooper, john"
+		},
+		{
+			"MaxAvg": 84.8,
+			"sections_instructor": "cooper, john"
+		},
+		{
+			"MaxAvg": 84.85,
+			"sections_instructor": "cooper, john"
+		},
+		{
+			"MaxAvg": 84.06,
+			"sections_instructor": "cooper, john"
+		},
+		{
+			"MaxAvg": 80.21,
+			"sections_instructor": "johnston, kirsty"
+		},
+		{
+			"MaxAvg": 87.2,
+			"sections_instructor": "johnston, kirsty"
+		},
+		{
+			"MaxAvg": 90.43,
+			"sections_instructor": "johnston, kirsty"
+		},
+		{
+			"MaxAvg": 90,
+			"sections_instructor": "johnston, kirsty"
+		},
+		{
+			"MaxAvg": 90.75,
+			"sections_instructor": "johnston, kirsty"
+		},
+		{
+			"MaxAvg": 85.5,
+			"sections_instructor": "cooper, john;heatley, stephen;scholte, tom"
+		},
+		{
+			"MaxAvg": 81.53,
+			"sections_instructor": "saddler, john"
+		},
+		{
+			"MaxAvg": 80.95,
+			"sections_instructor": "nelson, john douglas"
+		}
+	]
+}

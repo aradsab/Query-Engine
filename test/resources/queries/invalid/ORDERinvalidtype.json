@@ -1,0 +1,19 @@
+{
+	"title": "ORDER invalid type",
+	"input": {
+		"WHERE": {
+			"LT": {
+				"sections_avg": 50
+			}
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"sections_dept",
+				"sections_avg"
+			],
+			"ORDER": []
+		}
+	},
+	"errorExpected": true,
+	"expected": "InsightError"
+}

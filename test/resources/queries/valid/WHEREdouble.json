@@ -1,0 +1,88 @@
+{
+	"title": "WHEREdouble",
+	"input": {
+		"WHERE": {
+			"OR": [
+				{
+					"EQ": {
+						"sections_avg": 60
+					}
+				},
+				{
+					"EQ": {
+						"sections_avg": 50
+					}
+				}
+			]
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"sections_dept",
+				"sections_avg"
+			]
+		}
+	},
+	"errorExpected": false,
+	"expected": [
+		{
+			"sections_dept": "busi",
+			"sections_avg": 50
+		},
+		{
+			"sections_dept": "busi",
+			"sections_avg": 60
+		},
+		{
+			"sections_dept": "busi",
+			"sections_avg": 60
+		},
+		{
+			"sections_dept": "chbe",
+			"sections_avg": 50
+		},
+		{
+			"sections_dept": "chem",
+			"sections_avg": 60
+		},
+		{
+			"sections_dept": "chem",
+			"sections_avg": 60
+		},
+		{
+			"sections_dept": "dhyg",
+			"sections_avg": 60
+		},
+		{
+			"sections_dept": "dhyg",
+			"sections_avg": 60
+		},
+		{
+			"sections_dept": "dhyg",
+			"sections_avg": 60
+		},
+		{
+			"sections_dept": "dhyg",
+			"sections_avg": 60
+		},
+		{
+			"sections_dept": "hist",
+			"sections_avg": 60
+		},
+		{
+			"sections_dept": "phar",
+			"sections_avg": 60
+		},
+		{
+			"sections_dept": "phil",
+			"sections_avg": 60
+		},
+		{
+			"sections_dept": "psyc",
+			"sections_avg": 50
+		},
+		{
+			"sections_dept": "test",
+			"sections_avg": 60
+		}
+	]
+}

@@ -1,0 +1,437 @@
+{
+	"title": "GroupNotInColumn",
+	"input": {
+		"WHERE": {
+			"AND": [
+				{
+					"GT": {
+						"sections_avg": 80
+					}
+				},
+				{
+					"IS": {
+						"sections_instructor": "*john*"
+					}
+				}
+			]
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"MaxAvg",
+				"MinAvg",
+				"AvgAvg",
+				"CountAvg",
+				"SumAvg"
+			],
+			"ORDER": {
+				"dir": "UP",
+				"keys": [
+					"MaxAvg",
+					"MinAvg",
+					"AvgAvg",
+					"CountAvg",
+					"SumAvg"
+				]
+			}
+		},
+		"TRANSFORMATIONS": {
+			"GROUP": [
+				"sections_dept"
+			],
+			"APPLY": [
+				{
+					"MaxAvg": {
+						"MAX": "sections_avg"
+					}
+				},
+				{
+					"MinAvg": {
+						"MIN": "sections_avg"
+					}
+				},
+				{
+					"AvgAvg": {
+						"AVG": "sections_avg"
+					}
+				},
+				{
+					"CountAvg": {
+						"COUNT": "sections_dept"
+					}
+				},
+				{
+					"SumAvg": {
+						"SUM": "sections_avg"
+					}
+				}
+			]
+		}
+	},
+	"errorExpected": false,
+	"expected": [
+		{
+			"MaxAvg": 80.47,
+			"MinAvg": 80.47,
+			"AvgAvg": 80.47,
+			"CountAvg": 1,
+			"SumAvg": 80.47
+		},
+		{
+			"MaxAvg": 80.5,
+			"MinAvg": 80.5,
+			"AvgAvg": 80.5,
+			"CountAvg": 1,
+			"SumAvg": 80.5
+		},
+		{
+			"MaxAvg": 80.86,
+			"MinAvg": 80.86,
+			"AvgAvg": 80.86,
+			"CountAvg": 1,
+			"SumAvg": 80.86
+		},
+		{
+			"MaxAvg": 80.89,
+			"MinAvg": 80.89,
+			"AvgAvg": 80.89,
+			"CountAvg": 1,
+			"SumAvg": 80.89
+		},
+		{
+			"MaxAvg": 80.96,
+			"MinAvg": 80.02,
+			"AvgAvg": 80.37,
+			"CountAvg": 1,
+			"SumAvg": 401.86
+		},
+		{
+			"MaxAvg": 81.07,
+			"MinAvg": 81.07,
+			"AvgAvg": 81.07,
+			"CountAvg": 1,
+			"SumAvg": 81.07
+		},
+		{
+			"MaxAvg": 81.25,
+			"MinAvg": 81.25,
+			"AvgAvg": 81.25,
+			"CountAvg": 1,
+			"SumAvg": 81.25
+		},
+		{
+			"MaxAvg": 81.53,
+			"MinAvg": 80.95,
+			"AvgAvg": 81.24,
+			"CountAvg": 1,
+			"SumAvg": 162.48
+		},
+		{
+			"MaxAvg": 81.6,
+			"MinAvg": 81.31,
+			"AvgAvg": 81.45,
+			"CountAvg": 1,
+			"SumAvg": 162.91
+		},
+		{
+			"MaxAvg": 81.62,
+			"MinAvg": 80.12,
+			"AvgAvg": 81.08,
+			"CountAvg": 1,
+			"SumAvg": 243.24
+		},
+		{
+			"MaxAvg": 82,
+			"MinAvg": 80.71,
+			"AvgAvg": 81.37,
+			"CountAvg": 1,
+			"SumAvg": 244.12
+		},
+		{
+			"MaxAvg": 82.26,
+			"MinAvg": 82.26,
+			"AvgAvg": 82.26,
+			"CountAvg": 1,
+			"SumAvg": 82.26
+		},
+		{
+			"MaxAvg": 82.44,
+			"MinAvg": 82.44,
+			"AvgAvg": 82.44,
+			"CountAvg": 1,
+			"SumAvg": 82.44
+		},
+		{
+			"MaxAvg": 82.7,
+			"MinAvg": 80.25,
+			"AvgAvg": 81.47,
+			"CountAvg": 1,
+			"SumAvg": 162.95
+		},
+		{
+			"MaxAvg": 82.81,
+			"MinAvg": 82.04,
+			"AvgAvg": 82.42,
+			"CountAvg": 1,
+			"SumAvg": 164.85
+		},
+		{
+			"MaxAvg": 83.85,
+			"MinAvg": 82.76,
+			"AvgAvg": 83.31,
+			"CountAvg": 1,
+			"SumAvg": 166.61
+		},
+		{
+			"MaxAvg": 84.2,
+			"MinAvg": 80.9,
+			"AvgAvg": 82.81,
+			"CountAvg": 1,
+			"SumAvg": 248.43
+		},
+		{
+			"MaxAvg": 84.75,
+			"MinAvg": 80.5,
+			"AvgAvg": 82.14,
+			"CountAvg": 1,
+			"SumAvg": 410.71
+		},
+		{
+			"MaxAvg": 84.91,
+			"MinAvg": 84.91,
+			"AvgAvg": 84.91,
+			"CountAvg": 1,
+			"SumAvg": 84.91
+		},
+		{
+			"MaxAvg": 85.6,
+			"MinAvg": 85.6,
+			"AvgAvg": 85.6,
+			"CountAvg": 1,
+			"SumAvg": 85.6
+		},
+		{
+			"MaxAvg": 85.75,
+			"MinAvg": 81.05,
+			"AvgAvg": 83.49,
+			"CountAvg": 1,
+			"SumAvg": 250.48
+		},
+		{
+			"MaxAvg": 85.81,
+			"MinAvg": 81.65,
+			"AvgAvg": 83.78,
+			"CountAvg": 1,
+			"SumAvg": 251.34
+		},
+		{
+			"MaxAvg": 85.92,
+			"MinAvg": 84.44,
+			"AvgAvg": 85.12,
+			"CountAvg": 1,
+			"SumAvg": 340.48
+		},
+		{
+			"MaxAvg": 86,
+			"MinAvg": 84.38,
+			"AvgAvg": 85.21,
+			"CountAvg": 1,
+			"SumAvg": 340.85
+		},
+		{
+			"MaxAvg": 86.25,
+			"MinAvg": 80.12,
+			"AvgAvg": 82.59,
+			"CountAvg": 1,
+			"SumAvg": 2642.86
+		},
+		{
+			"MaxAvg": 86.32,
+			"MinAvg": 85.92,
+			"AvgAvg": 86.12,
+			"CountAvg": 1,
+			"SumAvg": 172.24
+		},
+		{
+			"MaxAvg": 86.54,
+			"MinAvg": 80.13,
+			"AvgAvg": 82.94,
+			"CountAvg": 1,
+			"SumAvg": 414.69
+		},
+		{
+			"MaxAvg": 86.73,
+			"MinAvg": 80.65,
+			"AvgAvg": 83.38,
+			"CountAvg": 1,
+			"SumAvg": 833.83
+		},
+		{
+			"MaxAvg": 86.75,
+			"MinAvg": 80.61,
+			"AvgAvg": 83.6,
+			"CountAvg": 1,
+			"SumAvg": 668.77
+		},
+		{
+			"MaxAvg": 87.14,
+			"MinAvg": 80.04,
+			"AvgAvg": 83.24,
+			"CountAvg": 1,
+			"SumAvg": 1748.09
+		},
+		{
+			"MaxAvg": 87.48,
+			"MinAvg": 80.79,
+			"AvgAvg": 83.22,
+			"CountAvg": 1,
+			"SumAvg": 416.12
+		},
+		{
+			"MaxAvg": 87.53,
+			"MinAvg": 80.7,
+			"AvgAvg": 84.19,
+			"CountAvg": 1,
+			"SumAvg": 505.15
+		},
+		{
+			"MaxAvg": 87.86,
+			"MinAvg": 85.73,
+			"AvgAvg": 86.95,
+			"CountAvg": 1,
+			"SumAvg": 608.65
+		},
+		{
+			"MaxAvg": 88.46,
+			"MinAvg": 82.13,
+			"AvgAvg": 85.3,
+			"CountAvg": 1,
+			"SumAvg": 170.59
+		},
+		{
+			"MaxAvg": 88.5,
+			"MinAvg": 85.17,
+			"AvgAvg": 86.83,
+			"CountAvg": 1,
+			"SumAvg": 173.67
+		},
+		{
+			"MaxAvg": 88.63,
+			"MinAvg": 86.5,
+			"AvgAvg": 87.59,
+			"CountAvg": 1,
+			"SumAvg": 350.38
+		},
+		{
+			"MaxAvg": 88.71,
+			"MinAvg": 80.11,
+			"AvgAvg": 82.95,
+			"CountAvg": 1,
+			"SumAvg": 2405.62
+		},
+		{
+			"MaxAvg": 88.71,
+			"MinAvg": 88.71,
+			"AvgAvg": 88.71,
+			"CountAvg": 1,
+			"SumAvg": 88.71
+		},
+		{
+			"MaxAvg": 88.81,
+			"MinAvg": 80.17,
+			"AvgAvg": 83.63,
+			"CountAvg": 1,
+			"SumAvg": 1254.45
+		},
+		{
+			"MaxAvg": 89.25,
+			"MinAvg": 82.8,
+			"AvgAvg": 85.42,
+			"CountAvg": 1,
+			"SumAvg": 512.55
+		},
+		{
+			"MaxAvg": 89.4,
+			"MinAvg": 80.43,
+			"AvgAvg": 85.88,
+			"CountAvg": 1,
+			"SumAvg": 1288.16
+		},
+		{
+			"MaxAvg": 89.54,
+			"MinAvg": 84.88,
+			"AvgAvg": 87.01,
+			"CountAvg": 1,
+			"SumAvg": 348.05
+		},
+		{
+			"MaxAvg": 89.8,
+			"MinAvg": 89.8,
+			"AvgAvg": 89.8,
+			"CountAvg": 1,
+			"SumAvg": 89.8
+		},
+		{
+			"MaxAvg": 90,
+			"MinAvg": 83,
+			"AvgAvg": 86.84,
+			"CountAvg": 1,
+			"SumAvg": 781.52
+		},
+		{
+			"MaxAvg": 90.52,
+			"MinAvg": 87.59,
+			"AvgAvg": 89.06,
+			"CountAvg": 1,
+			"SumAvg": 178.11
+		},
+		{
+			"MaxAvg": 90.53,
+			"MinAvg": 90.53,
+			"AvgAvg": 90.53,
+			"CountAvg": 1,
+			"SumAvg": 90.53
+		},
+		{
+			"MaxAvg": 90.66,
+			"MinAvg": 82.3,
+			"AvgAvg": 87.05,
+			"CountAvg": 1,
+			"SumAvg": 1131.65
+		},
+		{
+			"MaxAvg": 90.75,
+			"MinAvg": 80.17,
+			"AvgAvg": 85.46,
+			"CountAvg": 1,
+			"SumAvg": 1111.01
+		},
+		{
+			"MaxAvg": 92.2,
+			"MinAvg": 80.15,
+			"AvgAvg": 84.82,
+			"CountAvg": 1,
+			"SumAvg": 254.45
+		},
+		{
+			"MaxAvg": 93.33,
+			"MinAvg": 81,
+			"AvgAvg": 86.94,
+			"CountAvg": 1,
+			"SumAvg": 1477.96
+		},
+		{
+			"MaxAvg": 95.25,
+			"MinAvg": 86.14,
+			"AvgAvg": 89.17,
+			"CountAvg": 1,
+			"SumAvg": 980.83
+		},
+		{
+			"MaxAvg": 96,
+			"MinAvg": 84.82,
+			"AvgAvg": 90.32,
+			"CountAvg": 1,
+			"SumAvg": 903.17
+		}
+	]
+}

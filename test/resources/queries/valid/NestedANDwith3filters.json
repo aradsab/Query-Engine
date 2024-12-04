@@ -1,0 +1,638 @@
+{
+	"title": "NestedANDwith3filters",
+	"input": {
+		"WHERE": {
+			"AND": [
+				{
+					"AND": [
+						{
+							"IS": {
+								"sections_dept": "*c*"
+							}
+						},
+						{
+							"IS": {
+								"sections_title": "*"
+							}
+						},
+						{
+							"GT": {
+								"sections_avg": 90
+							}
+						}
+					]
+				},
+				{
+					"NOT": {
+						"AND": [
+							{
+								"LT": {
+									"sections_avg": 50
+								}
+							},
+							{
+								"LT": {
+									"sections_pass": 10
+								}
+							}
+						]
+					}
+				},
+				{
+					"LT": {
+						"sections_audit": 30
+					}
+				},
+				{
+					"LT": {
+						"sections_fail": 30
+					}
+				},
+				{
+					"AND": [
+						{
+							"GT": {
+								"sections_year": 2014
+							}
+						},
+						{
+							"NOT": {
+								"IS": {
+									"sections_instructor": "*s*"
+								}
+							}
+						}
+					]
+				},
+				{
+					"IS": {
+						"sections_uuid": "*"
+					}
+				},
+				{
+					"IS": {
+						"sections_id": "*"
+					}
+				}
+			]
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"sections_uuid",
+				"sections_id",
+				"sections_title",
+				"sections_instructor",
+				"sections_dept",
+				"sections_year",
+				"sections_avg",
+				"sections_pass",
+				"sections_fail",
+				"sections_audit"
+			],
+			"ORDER": "sections_avg"
+		}
+	},
+	"errorExpected": false,
+	"expected": [
+		{
+			"sections_uuid": "39834",
+			"sections_id": "511",
+			"sections_title": "found ed tech",
+			"sections_instructor": "alam, matiul",
+			"sections_dept": "etec",
+			"sections_year": 2015,
+			"sections_avg": 90.05,
+			"sections_pass": 22,
+			"sections_fail": 0,
+			"sections_audit": 0
+		},
+		{
+			"sections_uuid": "82286",
+			"sections_id": "111",
+			"sections_title": "lab expl earth",
+			"sections_instructor": "",
+			"sections_dept": "eosc",
+			"sections_year": 2016,
+			"sections_avg": 90.15,
+			"sections_pass": 20,
+			"sections_fail": 0,
+			"sections_audit": 0
+		},
+		{
+			"sections_uuid": "2868",
+			"sections_id": "555",
+			"sections_title": "optimiz eng syst",
+			"sections_instructor": "lence, barbara jean",
+			"sections_dept": "civl",
+			"sections_year": 2015,
+			"sections_avg": 90.25,
+			"sections_pass": 8,
+			"sections_fail": 0,
+			"sections_audit": 0
+		},
+		{
+			"sections_uuid": "2814",
+			"sections_id": "440",
+			"sections_title": "transprt'n eng 2",
+			"sections_instructor": "lim, clark",
+			"sections_dept": "civl",
+			"sections_year": 2015,
+			"sections_avg": 90.26,
+			"sections_pass": 31,
+			"sections_fail": 0,
+			"sections_audit": 0
+		},
+		{
+			"sections_uuid": "39836",
+			"sections_id": "511",
+			"sections_title": "found ed tech",
+			"sections_instructor": "wang, yifei",
+			"sections_dept": "etec",
+			"sections_year": 2015,
+			"sections_avg": 90.33,
+			"sections_pass": 20,
+			"sections_fail": 1,
+			"sections_audit": 0
+		},
+		{
+			"sections_uuid": "1163",
+			"sections_id": "439",
+			"sections_title": "asmnt spec needs",
+			"sections_instructor": "el khatib, lara",
+			"sections_dept": "eced",
+			"sections_year": 2015,
+			"sections_avg": 90.43,
+			"sections_pass": 34,
+			"sections_fail": 1,
+			"sections_audit": 0
+		},
+		{
+			"sections_uuid": "50993",
+			"sections_id": "545",
+			"sections_title": "family counsl ii",
+			"sections_instructor": "elez, tatjana",
+			"sections_dept": "cnps",
+			"sections_year": 2015,
+			"sections_avg": 90.44,
+			"sections_pass": 16,
+			"sections_fail": 0,
+			"sections_audit": 0
+		},
+		{
+			"sections_uuid": "18492",
+			"sections_id": "574",
+			"sections_title": "self-tuning ctrl",
+			"sections_instructor": "dumont, guy a",
+			"sections_dept": "eece",
+			"sections_year": 2015,
+			"sections_avg": 90.5,
+			"sections_pass": 4,
+			"sections_fail": 0,
+			"sections_audit": 1
+		},
+		{
+			"sections_uuid": "50983",
+			"sections_id": "514",
+			"sections_title": "counsl adolescnt",
+			"sections_instructor": "dyer, brenda",
+			"sections_dept": "cnps",
+			"sections_year": 2015,
+			"sections_avg": 90.5,
+			"sections_pass": 14,
+			"sections_fail": 0,
+			"sections_audit": 0
+		},
+		{
+			"sections_uuid": "30579",
+			"sections_id": "551",
+			"sections_title": "mth ed: crnt iss",
+			"sections_instructor": "nicol, cynthia",
+			"sections_dept": "edcp",
+			"sections_year": 2015,
+			"sections_avg": 90.56,
+			"sections_pass": 9,
+			"sections_fail": 0,
+			"sections_audit": 0
+		},
+		{
+			"sections_uuid": "39824",
+			"sections_id": "500",
+			"sections_title": "res meth educ",
+			"sections_instructor": "ercikan, kadriye",
+			"sections_dept": "etec",
+			"sections_year": 2015,
+			"sections_avg": 90.6,
+			"sections_pass": 20,
+			"sections_fail": 0,
+			"sections_audit": 0
+		},
+		{
+			"sections_uuid": "50945",
+			"sections_id": "362",
+			"sections_title": "basic intvw skls",
+			"sections_instructor": "",
+			"sections_dept": "cnps",
+			"sections_year": 2015,
+			"sections_avg": 90.64,
+			"sections_pass": 14,
+			"sections_fail": 0,
+			"sections_audit": 0
+		},
+		{
+			"sections_uuid": "30586",
+			"sections_id": "562",
+			"sections_title": "curric iss&thry",
+			"sections_instructor": "phelan, anne",
+			"sections_dept": "edcp",
+			"sections_year": 2015,
+			"sections_avg": 90.84,
+			"sections_pass": 19,
+			"sections_fail": 0,
+			"sections_audit": 0
+		},
+		{
+			"sections_uuid": "78573",
+			"sections_id": "512",
+			"sections_title": "appl lear theor",
+			"sections_instructor": "mccracken, janet",
+			"sections_dept": "etec",
+			"sections_year": 2016,
+			"sections_avg": 90.86,
+			"sections_pass": 21,
+			"sections_fail": 0,
+			"sections_audit": 0
+		},
+		{
+			"sections_uuid": "85093",
+			"sections_id": "507",
+			"sections_title": "tech cel&dev bio",
+			"sections_instructor": "underhill, tully michael",
+			"sections_dept": "cell",
+			"sections_year": 2015,
+			"sections_avg": 91,
+			"sections_pass": 11,
+			"sections_fail": 0,
+			"sections_audit": 0
+		},
+		{
+			"sections_uuid": "2802",
+			"sections_id": "432",
+			"sections_title": "adv steel design",
+			"sections_instructor": "joghataie, abdolreza",
+			"sections_dept": "civl",
+			"sections_year": 2015,
+			"sections_avg": 91.06,
+			"sections_pass": 50,
+			"sections_fail": 0,
+			"sections_audit": 0
+		},
+		{
+			"sections_uuid": "74464",
+			"sections_id": "516",
+			"sections_title": "spc tpcs macroec",
+			"sections_instructor": "gallipoli, giovanni",
+			"sections_dept": "econ",
+			"sections_year": 2015,
+			"sections_avg": 91.29,
+			"sections_pass": 7,
+			"sections_fail": 0,
+			"sections_audit": 0
+		},
+		{
+			"sections_uuid": "30553",
+			"sections_id": "473",
+			"sections_title": "ict educ ethics",
+			"sections_instructor": "macdowell, paula",
+			"sections_dept": "edcp",
+			"sections_year": 2015,
+			"sections_avg": 91.44,
+			"sections_pass": 18,
+			"sections_fail": 0,
+			"sections_audit": 0
+		},
+		{
+			"sections_uuid": "87136",
+			"sections_id": "587",
+			"sections_title": "major proj prt 1",
+			"sections_instructor": "",
+			"sections_dept": "rhsc",
+			"sections_year": 2015,
+			"sections_avg": 91.5,
+			"sections_pass": 4,
+			"sections_fail": 0,
+			"sections_audit": 0
+		},
+		{
+			"sections_uuid": "50496",
+			"sections_id": "500",
+			"sections_title": "res mthd in educ",
+			"sections_instructor": "renwick, kerry",
+			"sections_dept": "educ",
+			"sections_year": 2015,
+			"sections_avg": 91.58,
+			"sections_pass": 19,
+			"sections_fail": 0,
+			"sections_audit": 0
+		},
+		{
+			"sections_uuid": "93686",
+			"sections_id": "421",
+			"sections_title": "expermntl micb",
+			"sections_instructor": "oliver, david",
+			"sections_dept": "micb",
+			"sections_year": 2015,
+			"sections_avg": 91.79,
+			"sections_pass": 56,
+			"sections_fail": 0,
+			"sections_audit": 0
+		},
+		{
+			"sections_uuid": "30861",
+			"sections_id": "271",
+			"sections_title": "tpcs biomed eng",
+			"sections_instructor": "rohling, robert",
+			"sections_dept": "elec",
+			"sections_year": 2015,
+			"sections_avg": 91.83,
+			"sections_pass": 23,
+			"sections_fail": 0,
+			"sections_audit": 0
+		},
+		{
+			"sections_uuid": "75159",
+			"sections_id": "599",
+			"sections_title": "thesis",
+			"sections_instructor": "taylor, timothy",
+			"sections_dept": "crwr",
+			"sections_year": 2015,
+			"sections_avg": 92,
+			"sections_pass": 1,
+			"sections_fail": 0,
+			"sections_audit": 0
+		},
+		{
+			"sections_uuid": "2892",
+			"sections_id": "583",
+			"sections_title": "urbn engr m&m",
+			"sections_instructor": "bigazzi, alexander york",
+			"sections_dept": "civl",
+			"sections_year": 2015,
+			"sections_avg": 92,
+			"sections_pass": 5,
+			"sections_fail": 0,
+			"sections_audit": 0
+		},
+		{
+			"sections_uuid": "75151",
+			"sections_id": "530",
+			"sections_title": "prep writ career",
+			"sections_instructor": "campbell, deborah",
+			"sections_dept": "crwr",
+			"sections_year": 2015,
+			"sections_avg": 92.17,
+			"sections_pass": 6,
+			"sections_fail": 0,
+			"sections_audit": 0
+		},
+		{
+			"sections_uuid": "75162",
+			"sections_id": "599",
+			"sections_title": "thesis",
+			"sections_instructor": "",
+			"sections_dept": "crwr",
+			"sections_year": 2015,
+			"sections_avg": 92.2,
+			"sections_pass": 5,
+			"sections_fail": 0,
+			"sections_audit": 0
+		},
+		{
+			"sections_uuid": "28357",
+			"sections_id": "586",
+			"sections_title": "",
+			"sections_instructor": "munteanu, mircea",
+			"sections_dept": "cnps",
+			"sections_year": 2016,
+			"sections_avg": 92.22,
+			"sections_pass": 18,
+			"sections_fail": 0,
+			"sections_audit": 0
+		},
+		{
+			"sections_uuid": "85097",
+			"sections_id": "512",
+			"sections_title": "gen&cell therapy",
+			"sections_instructor": "kieffer, tim",
+			"sections_dept": "cell",
+			"sections_year": 2015,
+			"sections_avg": 92.4,
+			"sections_pass": 5,
+			"sections_fail": 0,
+			"sections_audit": 0
+		},
+		{
+			"sections_uuid": "18496",
+			"sections_id": "579",
+			"sections_title": "ad top vlsi desg",
+			"sections_instructor": "quinton, bradley",
+			"sections_dept": "eece",
+			"sections_year": 2015,
+			"sections_avg": 92.5,
+			"sections_pass": 2,
+			"sections_fail": 0,
+			"sections_audit": 2
+		},
+		{
+			"sections_uuid": "50959",
+			"sections_id": "363",
+			"sections_title": "career counselng",
+			"sections_instructor": "bruno, talino",
+			"sections_dept": "cnps",
+			"sections_year": 2015,
+			"sections_avg": 92.66,
+			"sections_pass": 58,
+			"sections_fail": 0,
+			"sections_audit": 0
+		},
+		{
+			"sections_uuid": "42457",
+			"sections_id": "439",
+			"sections_title": "asmnt spec needs",
+			"sections_instructor": "el khatib, lara",
+			"sections_dept": "eced",
+			"sections_year": 2016,
+			"sections_avg": 92.67,
+			"sections_pass": 33,
+			"sections_fail": 0,
+			"sections_audit": 0
+		},
+		{
+			"sections_uuid": "39847",
+			"sections_id": "521",
+			"sections_title": "indig, tech&ed",
+			"sections_instructor": "marker, michael",
+			"sections_dept": "etec",
+			"sections_year": 2015,
+			"sections_avg": 92.83,
+			"sections_pass": 18,
+			"sections_fail": 0,
+			"sections_audit": 0
+		},
+		{
+			"sections_uuid": "1161",
+			"sections_id": "438",
+			"sections_title": "obsv&doc erly ch",
+			"sections_instructor": "pighini, maria",
+			"sections_dept": "eced",
+			"sections_year": 2015,
+			"sections_avg": 92.87,
+			"sections_pass": 31,
+			"sections_fail": 0,
+			"sections_audit": 0
+		},
+		{
+			"sections_uuid": "50569",
+			"sections_id": "599",
+			"sections_title": "thesis",
+			"sections_instructor": "",
+			"sections_dept": "crwr",
+			"sections_year": 2016,
+			"sections_avg": 92.88,
+			"sections_pass": 8,
+			"sections_fail": 0,
+			"sections_audit": 0
+		},
+		{
+			"sections_uuid": "51007",
+			"sections_id": "586",
+			"sections_title": "",
+			"sections_instructor": "munteanu, mircea",
+			"sections_dept": "cnps",
+			"sections_year": 2015,
+			"sections_avg": 92.95,
+			"sections_pass": 20,
+			"sections_fail": 0,
+			"sections_audit": 0
+		},
+		{
+			"sections_uuid": "75161",
+			"sections_id": "599",
+			"sections_title": "thesis",
+			"sections_instructor": "",
+			"sections_dept": "crwr",
+			"sections_year": 2015,
+			"sections_avg": 93.33,
+			"sections_pass": 6,
+			"sections_fail": 0,
+			"sections_audit": 0
+		},
+		{
+			"sections_uuid": "39860",
+			"sections_id": "533",
+			"sections_title": "tech math sci",
+			"sections_instructor": "milner-bolotin, marina",
+			"sections_dept": "etec",
+			"sections_year": 2015,
+			"sections_avg": 93.95,
+			"sections_pass": 21,
+			"sections_fail": 0,
+			"sections_audit": 0
+		},
+		{
+			"sections_uuid": "75160",
+			"sections_id": "599",
+			"sections_title": "thesis",
+			"sections_instructor": "lyon, annabel",
+			"sections_dept": "crwr",
+			"sections_year": 2015,
+			"sections_avg": 94,
+			"sections_pass": 3,
+			"sections_fail": 0,
+			"sections_audit": 0
+		},
+		{
+			"sections_uuid": "51008",
+			"sections_id": "586",
+			"sections_title": "",
+			"sections_instructor": "munteanu, mircea",
+			"sections_dept": "cnps",
+			"sections_year": 2015,
+			"sections_avg": 94.05,
+			"sections_pass": 20,
+			"sections_fail": 0,
+			"sections_audit": 0
+		},
+		{
+			"sections_uuid": "93698",
+			"sections_id": "449",
+			"sections_title": "research problem",
+			"sections_instructor": "kion, tracy",
+			"sections_dept": "micb",
+			"sections_year": 2015,
+			"sections_avg": 94.17,
+			"sections_pass": 6,
+			"sections_fail": 0,
+			"sections_audit": 0
+		},
+		{
+			"sections_uuid": "18466",
+			"sections_id": "554",
+			"sections_title": "power syst dynam",
+			"sections_instructor": "dommel, hermann",
+			"sections_dept": "eece",
+			"sections_year": 2015,
+			"sections_avg": 94.71,
+			"sections_pass": 14,
+			"sections_fail": 0,
+			"sections_audit": 0
+		},
+		{
+			"sections_uuid": "1833",
+			"sections_id": "500",
+			"sections_title": "res mthd in educ",
+			"sections_instructor": "henry, annette",
+			"sections_dept": "educ",
+			"sections_year": 2016,
+			"sections_avg": 94.75,
+			"sections_pass": 12,
+			"sections_fail": 0,
+			"sections_audit": 0
+		},
+		{
+			"sections_uuid": "10016",
+			"sections_id": "516",
+			"sections_title": "spc tpcs macroec",
+			"sections_instructor": "gallipoli, giovanni",
+			"sections_dept": "econ",
+			"sections_year": 2016,
+			"sections_avg": 95,
+			"sections_pass": 3,
+			"sections_fail": 0,
+			"sections_audit": 2
+		},
+		{
+			"sections_uuid": "78576",
+			"sections_id": "521",
+			"sections_title": "indig, tech&ed",
+			"sections_instructor": "marker, michael",
+			"sections_dept": "etec",
+			"sections_year": 2016,
+			"sections_avg": 95.32,
+			"sections_pass": 19,
+			"sections_fail": 0,
+			"sections_audit": 0
+		},
+		{
+			"sections_uuid": "7254",
+			"sections_id": "506",
+			"sections_title": "orch repertoire",
+			"sections_instructor": "girard, jonathan",
+			"sections_dept": "musc",
+			"sections_year": 2015,
+			"sections_avg": 95.38,
+			"sections_pass": 8,
+			"sections_fail": 0,
+			"sections_audit": 0
+		}
+	]
+}

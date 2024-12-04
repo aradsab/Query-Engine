@@ -1,0 +1,599 @@
+{
+	"title": "No Title Specified",
+	"input": {
+		"WHERE": {},
+		"OPTIONS": {
+			"COLUMNS": [
+				"CountSeats"
+			],
+			"ORDER": {
+				"dir": "UP",
+				"keys": [
+					"CountSeats"
+				]
+			}
+		},
+		"TRANSFORMATIONS": {
+			"GROUP": [
+				"sections_dept"
+			],
+			"APPLY": [
+				{
+					"CountSeats": {
+						"COUNT": "sections_pass"
+					}
+				}
+			]
+		}
+	},
+	"errorExpected": false,
+	"expected": [
+		{
+			"CountSeats": 1
+		},
+		{
+			"CountSeats": 1
+		},
+		{
+			"CountSeats": 1
+		},
+		{
+			"CountSeats": 2
+		},
+		{
+			"CountSeats": 2
+		},
+		{
+			"CountSeats": 2
+		},
+		{
+			"CountSeats": 2
+		},
+		{
+			"CountSeats": 2
+		},
+		{
+			"CountSeats": 3
+		},
+		{
+			"CountSeats": 3
+		},
+		{
+			"CountSeats": 4
+		},
+		{
+			"CountSeats": 4
+		},
+		{
+			"CountSeats": 4
+		},
+		{
+			"CountSeats": 4
+		},
+		{
+			"CountSeats": 5
+		},
+		{
+			"CountSeats": 5
+		},
+		{
+			"CountSeats": 5
+		},
+		{
+			"CountSeats": 6
+		},
+		{
+			"CountSeats": 6
+		},
+		{
+			"CountSeats": 6
+		},
+		{
+			"CountSeats": 6
+		},
+		{
+			"CountSeats": 6
+		},
+		{
+			"CountSeats": 7
+		},
+		{
+			"CountSeats": 7
+		},
+		{
+			"CountSeats": 7
+		},
+		{
+			"CountSeats": 8
+		},
+		{
+			"CountSeats": 8
+		},
+		{
+			"CountSeats": 8
+		},
+		{
+			"CountSeats": 8
+		},
+		{
+			"CountSeats": 8
+		},
+		{
+			"CountSeats": 8
+		},
+		{
+			"CountSeats": 8
+		},
+		{
+			"CountSeats": 8
+		},
+		{
+			"CountSeats": 8
+		},
+		{
+			"CountSeats": 8
+		},
+		{
+			"CountSeats": 9
+		},
+		{
+			"CountSeats": 9
+		},
+		{
+			"CountSeats": 9
+		},
+		{
+			"CountSeats": 9
+		},
+		{
+			"CountSeats": 9
+		},
+		{
+			"CountSeats": 9
+		},
+		{
+			"CountSeats": 9
+		},
+		{
+			"CountSeats": 10
+		},
+		{
+			"CountSeats": 10
+		},
+		{
+			"CountSeats": 10
+		},
+		{
+			"CountSeats": 11
+		},
+		{
+			"CountSeats": 11
+		},
+		{
+			"CountSeats": 11
+		},
+		{
+			"CountSeats": 11
+		},
+		{
+			"CountSeats": 11
+		},
+		{
+			"CountSeats": 12
+		},
+		{
+			"CountSeats": 12
+		},
+		{
+			"CountSeats": 12
+		},
+		{
+			"CountSeats": 12
+		},
+		{
+			"CountSeats": 12
+		},
+		{
+			"CountSeats": 12
+		},
+		{
+			"CountSeats": 12
+		},
+		{
+			"CountSeats": 14
+		},
+		{
+			"CountSeats": 14
+		},
+		{
+			"CountSeats": 15
+		},
+		{
+			"CountSeats": 15
+		},
+		{
+			"CountSeats": 15
+		},
+		{
+			"CountSeats": 16
+		},
+		{
+			"CountSeats": 18
+		},
+		{
+			"CountSeats": 18
+		},
+		{
+			"CountSeats": 19
+		},
+		{
+			"CountSeats": 21
+		},
+		{
+			"CountSeats": 21
+		},
+		{
+			"CountSeats": 22
+		},
+		{
+			"CountSeats": 22
+		},
+		{
+			"CountSeats": 22
+		},
+		{
+			"CountSeats": 22
+		},
+		{
+			"CountSeats": 23
+		},
+		{
+			"CountSeats": 23
+		},
+		{
+			"CountSeats": 23
+		},
+		{
+			"CountSeats": 24
+		},
+		{
+			"CountSeats": 24
+		},
+		{
+			"CountSeats": 24
+		},
+		{
+			"CountSeats": 25
+		},
+		{
+			"CountSeats": 26
+		},
+		{
+			"CountSeats": 26
+		},
+		{
+			"CountSeats": 26
+		},
+		{
+			"CountSeats": 27
+		},
+		{
+			"CountSeats": 27
+		},
+		{
+			"CountSeats": 28
+		},
+		{
+			"CountSeats": 29
+		},
+		{
+			"CountSeats": 29
+		},
+		{
+			"CountSeats": 29
+		},
+		{
+			"CountSeats": 30
+		},
+		{
+			"CountSeats": 30
+		},
+		{
+			"CountSeats": 31
+		},
+		{
+			"CountSeats": 33
+		},
+		{
+			"CountSeats": 33
+		},
+		{
+			"CountSeats": 33
+		},
+		{
+			"CountSeats": 33
+		},
+		{
+			"CountSeats": 34
+		},
+		{
+			"CountSeats": 34
+		},
+		{
+			"CountSeats": 35
+		},
+		{
+			"CountSeats": 35
+		},
+		{
+			"CountSeats": 36
+		},
+		{
+			"CountSeats": 37
+		},
+		{
+			"CountSeats": 37
+		},
+		{
+			"CountSeats": 38
+		},
+		{
+			"CountSeats": 38
+		},
+		{
+			"CountSeats": 38
+		},
+		{
+			"CountSeats": 40
+		},
+		{
+			"CountSeats": 42
+		},
+		{
+			"CountSeats": 42
+		},
+		{
+			"CountSeats": 43
+		},
+		{
+			"CountSeats": 43
+		},
+		{
+			"CountSeats": 44
+		},
+		{
+			"CountSeats": 45
+		},
+		{
+			"CountSeats": 45
+		},
+		{
+			"CountSeats": 49
+		},
+		{
+			"CountSeats": 49
+		},
+		{
+			"CountSeats": 50
+		},
+		{
+			"CountSeats": 58
+		},
+		{
+			"CountSeats": 59
+		},
+		{
+			"CountSeats": 60
+		},
+		{
+			"CountSeats": 60
+		},
+		{
+			"CountSeats": 60
+		},
+		{
+			"CountSeats": 60
+		},
+		{
+			"CountSeats": 61
+		},
+		{
+			"CountSeats": 62
+		},
+		{
+			"CountSeats": 62
+		},
+		{
+			"CountSeats": 64
+		},
+		{
+			"CountSeats": 64
+		},
+		{
+			"CountSeats": 66
+		},
+		{
+			"CountSeats": 66
+		},
+		{
+			"CountSeats": 68
+		},
+		{
+			"CountSeats": 68
+		},
+		{
+			"CountSeats": 68
+		},
+		{
+			"CountSeats": 70
+		},
+		{
+			"CountSeats": 71
+		},
+		{
+			"CountSeats": 71
+		},
+		{
+			"CountSeats": 72
+		},
+		{
+			"CountSeats": 72
+		},
+		{
+			"CountSeats": 72
+		},
+		{
+			"CountSeats": 74
+		},
+		{
+			"CountSeats": 74
+		},
+		{
+			"CountSeats": 75
+		},
+		{
+			"CountSeats": 76
+		},
+		{
+			"CountSeats": 82
+		},
+		{
+			"CountSeats": 83
+		},
+		{
+			"CountSeats": 86
+		},
+		{
+			"CountSeats": 87
+		},
+		{
+			"CountSeats": 87
+		},
+		{
+			"CountSeats": 90
+		},
+		{
+			"CountSeats": 91
+		},
+		{
+			"CountSeats": 98
+		},
+		{
+			"CountSeats": 100
+		},
+		{
+			"CountSeats": 103
+		},
+		{
+			"CountSeats": 112
+		},
+		{
+			"CountSeats": 114
+		},
+		{
+			"CountSeats": 115
+		},
+		{
+			"CountSeats": 115
+		},
+		{
+			"CountSeats": 115
+		},
+		{
+			"CountSeats": 116
+		},
+		{
+			"CountSeats": 118
+		},
+		{
+			"CountSeats": 121
+		},
+		{
+			"CountSeats": 121
+		},
+		{
+			"CountSeats": 122
+		},
+		{
+			"CountSeats": 123
+		},
+		{
+			"CountSeats": 124
+		},
+		{
+			"CountSeats": 129
+		},
+		{
+			"CountSeats": 134
+		},
+		{
+			"CountSeats": 134
+		},
+		{
+			"CountSeats": 150
+		},
+		{
+			"CountSeats": 150
+		},
+		{
+			"CountSeats": 155
+		},
+		{
+			"CountSeats": 156
+		},
+		{
+			"CountSeats": 161
+		},
+		{
+			"CountSeats": 162
+		},
+		{
+			"CountSeats": 166
+		},
+		{
+			"CountSeats": 175
+		},
+		{
+			"CountSeats": 187
+		},
+		{
+			"CountSeats": 192
+		},
+		{
+			"CountSeats": 199
+		},
+		{
+			"CountSeats": 223
+		},
+		{
+			"CountSeats": 227
+		},
+		{
+			"CountSeats": 234
+		},
+		{
+			"CountSeats": 243
+		},
+		{
+			"CountSeats": 282
+		},
+		{
+			"CountSeats": 291
+		},
+		{
+			"CountSeats": 326
+		},
+		{
+			"CountSeats": 353
+		},
+		{
+			"CountSeats": 358
+		},
+		{
+			"CountSeats": 370
+		},
+		{
+			"CountSeats": 373
+		}
+	]
+}

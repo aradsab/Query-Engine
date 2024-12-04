@@ -1,0 +1,19 @@
+{
+	"title": "ORDERnoID",
+	"input": {
+		"WHERE": {
+			"GT": {
+				"sections_avg": 95
+			}
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"sections_dept",
+				"sections_avg"
+			],
+			"ORDER": "_dept"
+		}
+	},
+	"errorExpected": true,
+	"expected": "InsightError"
+}

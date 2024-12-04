@@ -1,0 +1,13 @@
+{
+	"title": "OPTIONSnotobject",
+	"input": {
+		"WHERE": {
+			"LT": {
+				"sections_avg": 50
+			}
+		},
+		"OPTIONS": []
+	},
+	"errorExpected": true,
+	"expected": "InsightError"
+}

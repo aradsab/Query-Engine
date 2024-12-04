@@ -1,0 +1,19 @@
+{
+	"title": "IS inputstring*",
+	"input": {
+		"WHERE": {
+			"IS": {
+				"sections_dept": "inputstring*"
+			}
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"sections_dept",
+				"sections_avg"
+			],
+			"ORDER": "sections_avg"
+		}
+	},
+	"errorExpected": false,
+	"expected": []
+}

@@ -1,0 +1,11 @@
+{
+	"title": "QUERYexcesskeys",
+	"input": {
+		"WHERE": {},
+		"OPTIONS": {},
+		"ANDMORE": {},
+		"MUCHMORE": {}
+	},
+	"errorExpected": true,
+	"expected": "InsightError"
+}

@@ -1,0 +1,13 @@
+{
+	"title": "Datasetemptystring",
+	"input": {
+		"WHERE": {},
+		"OPTIONS": {
+			"COLUMNS": [
+				"sup"
+			]
+		}
+	},
+	"errorExpected": true,
+	"expected": "InsightError"
+}

@@ -1,0 +1,19 @@
+{
+	"title": "ORDERnull",
+	"input": {
+		"WHERE": {
+			"GT": {
+				"sections_avg": 95
+			}
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"sections_dept",
+				"sections_avg"
+			],
+			"ORDER": null
+		}
+	},
+	"errorExpected": true,
+	"expected": "InsightError"
+}

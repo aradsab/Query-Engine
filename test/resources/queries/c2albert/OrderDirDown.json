@@ -1,0 +1,1263 @@
+{
+	"title": "OrderDirDown",
+	"input": {
+		"WHERE": {
+			"AND": [
+				{
+					"GT": {
+						"sections_avg": 80
+					}
+				},
+				{
+					"IS": {
+						"sections_instructor": "*john*"
+					}
+				}
+			]
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"sections_avg",
+				"sections_instructor"
+			],
+			"ORDER": {
+				"dir": "DOWN",
+				"keys": [
+					"sections_avg",
+					"sections_instructor"
+				]
+			}
+		}
+	},
+	"errorExpected": false,
+	"expected": [
+		{
+			"sections_avg": 96,
+			"sections_instructor": "carter, john"
+		},
+		{
+			"sections_avg": 95.25,
+			"sections_instructor": "wagner, john"
+		},
+		{
+			"sections_avg": 94.75,
+			"sections_instructor": "wagner, john"
+		},
+		{
+			"sections_avg": 94.26,
+			"sections_instructor": "carter, john"
+		},
+		{
+			"sections_avg": 94,
+			"sections_instructor": "carter, john"
+		},
+		{
+			"sections_avg": 94,
+			"sections_instructor": "carter, john"
+		},
+		{
+			"sections_avg": 93.33,
+			"sections_instructor": "van deursen, john"
+		},
+		{
+			"sections_avg": 92.72,
+			"sections_instructor": "carter, john"
+		},
+		{
+			"sections_avg": 92.63,
+			"sections_instructor": "van deursen, john"
+		},
+		{
+			"sections_avg": 92.2,
+			"sections_instructor": "ng, john"
+		},
+		{
+			"sections_avg": 90.75,
+			"sections_instructor": "johnston, kirsty"
+		},
+		{
+			"sections_avg": 90.66,
+			"sections_instructor": "johnston, patricia"
+		},
+		{
+			"sections_avg": 90.62,
+			"sections_instructor": "johnson, shelly"
+		},
+		{
+			"sections_avg": 90.53,
+			"sections_instructor": "carter, john"
+		},
+		{
+			"sections_avg": 90.52,
+			"sections_instructor": "johnson, jennifer"
+		},
+		{
+			"sections_avg": 90.43,
+			"sections_instructor": "johnston, kirsty"
+		},
+		{
+			"sections_avg": 90.4,
+			"sections_instructor": "johnston, patricia"
+		},
+		{
+			"sections_avg": 90.2,
+			"sections_instructor": "johnson, shelly"
+		},
+		{
+			"sections_avg": 90,
+			"sections_instructor": "johnston, kirsty"
+		},
+		{
+			"sections_avg": 90,
+			"sections_instructor": "johnson, shelly"
+		},
+		{
+			"sections_avg": 90,
+			"sections_instructor": "friedmann, john"
+		},
+		{
+			"sections_avg": 89.8,
+			"sections_instructor": "allan, douglas;baimbridge, kenneth;clee, susanne michelle;haas, kurt;hammond, geoffrey lewis;johnson, james;kieffer, tim;loewen, christopher;luciani, dan;mason, barry;osborne, salma;tanentzapf, guy"
+		},
+		{
+			"sections_avg": 89.63,
+			"sections_instructor": "fisher, alexander john;oke, doreen"
+		},
+		{
+			"sections_avg": 89.6,
+			"sections_instructor": "johnston, charlotte"
+		},
+		{
+			"sections_avg": 89.6,
+			"sections_instructor": "fisher, alexander john;oke, doreen"
+		},
+		{
+			"sections_avg": 89.54,
+			"sections_instructor": "arefifar, seyed ali;botman, pieter;fels, s sidney;grecu, cristian sorin;kruchten, philippe;lee, terry;lusina, paul;madden, john;najarian, siamak;tang, shuo"
+		},
+		{
+			"sections_avg": 89.4,
+			"sections_instructor": "harder, kenneth;johnson, pauline"
+		},
+		{
+			"sections_avg": 89.4,
+			"sections_instructor": "harder, kenneth;johnson, pauline"
+		},
+		{
+			"sections_avg": 89.38,
+			"sections_instructor": "johnson, pauline"
+		},
+		{
+			"sections_avg": 89.27,
+			"sections_instructor": "johnson, shelly"
+		},
+		{
+			"sections_avg": 89.25,
+			"sections_instructor": "friedmann, john"
+		},
+		{
+			"sections_avg": 89.25,
+			"sections_instructor": "cambruzzi, john;coil, jeffrey martin;corber, ron;fraser, john gordon"
+		},
+		{
+			"sections_avg": 88.86,
+			"sections_instructor": "johnston, charlotte"
+		},
+		{
+			"sections_avg": 88.81,
+			"sections_instructor": "carter, cedric john"
+		},
+		{
+			"sections_avg": 88.71,
+			"sections_instructor": "green, timothy john"
+		},
+		{
+			"sections_avg": 88.71,
+			"sections_instructor": "elwood, kenneth john"
+		},
+		{
+			"sections_avg": 88.64,
+			"sections_instructor": "walker, lawrence john"
+		},
+		{
+			"sections_avg": 88.63,
+			"sections_instructor": "johnson, james"
+		},
+		{
+			"sections_avg": 88.61,
+			"sections_instructor": "harder, kenneth;johnson, pauline"
+		},
+		{
+			"sections_avg": 88.56,
+			"sections_instructor": "fisher, alexander john;oke, doreen"
+		},
+		{
+			"sections_avg": 88.5,
+			"sections_instructor": "cheung, wai lung;christensen, villy;close, david;pauly, daniel;pitcher, tony;sumaila, ussif rashid;trites, andrew;vincent, amanda;walters, carl john"
+		},
+		{
+			"sections_avg": 88.46,
+			"sections_instructor": "egan, john patrick"
+		},
+		{
+			"sections_avg": 88.45,
+			"sections_instructor": "carter, john"
+		},
+		{
+			"sections_avg": 88.33,
+			"sections_instructor": "johnston, charlotte"
+		},
+		{
+			"sections_avg": 88.24,
+			"sections_instructor": "harder, kenneth;johnson, pauline"
+		},
+		{
+			"sections_avg": 88,
+			"sections_instructor": "johnson, james"
+		},
+		{
+			"sections_avg": 88,
+			"sections_instructor": "harder, kenneth;johnson, pauline"
+		},
+		{
+			"sections_avg": 88,
+			"sections_instructor": "fisher, alexander john;oke, doreen"
+		},
+		{
+			"sections_avg": 87.86,
+			"sections_instructor": "madden, john"
+		},
+		{
+			"sections_avg": 87.86,
+			"sections_instructor": "carter, john"
+		},
+		{
+			"sections_avg": 87.75,
+			"sections_instructor": "johnston, charlotte"
+		},
+		{
+			"sections_avg": 87.68,
+			"sections_instructor": "madden, john"
+		},
+		{
+			"sections_avg": 87.6,
+			"sections_instructor": "friedmann, john"
+		},
+		{
+			"sections_avg": 87.59,
+			"sections_instructor": "johnson, jennifer"
+		},
+		{
+			"sections_avg": 87.56,
+			"sections_instructor": "madden, john"
+		},
+		{
+			"sections_avg": 87.54,
+			"sections_instructor": "walker, lawrence john"
+		},
+		{
+			"sections_avg": 87.53,
+			"sections_instructor": "kazanjian, arminee;miller, john;schmidt, brian"
+		},
+		{
+			"sections_avg": 87.48,
+			"sections_instructor": "oliffe, john"
+		},
+		{
+			"sections_avg": 87.43,
+			"sections_instructor": "walker, lawrence john"
+		},
+		{
+			"sections_avg": 87.4,
+			"sections_instructor": "fisher, alexander john;oke, doreen"
+		},
+		{
+			"sections_avg": 87.33,
+			"sections_instructor": "fisher, alexander john;oke, doreen"
+		},
+		{
+			"sections_avg": 87.32,
+			"sections_instructor": "au, nicholas;bruyere, helene;carter, cedric john;coupland, robert william;mcnagny, kelly marshall;medvedev, nadejda;schubert, peter;scott, mark;skinnider, brian;vercauteren, suzanne"
+		},
+		{
+			"sections_avg": 87.32,
+			"sections_instructor": "arefifar, seyed ali;botman, pieter;fels, s sidney;grecu, cristian sorin;kruchten, philippe;lee, terry;lusina, paul;madden, john;najarian, siamak;tang, shuo"
+		},
+		{
+			"sections_avg": 87.26,
+			"sections_instructor": "nomellini, john;smith, karen"
+		},
+		{
+			"sections_avg": 87.25,
+			"sections_instructor": "johnson, james"
+		},
+		{
+			"sections_avg": 87.25,
+			"sections_instructor": "friedmann, john"
+		},
+		{
+			"sections_avg": 87.2,
+			"sections_instructor": "johnston, kirsty"
+		},
+		{
+			"sections_avg": 87.14,
+			"sections_instructor": "de long, deborah;nelson, john douglas"
+		},
+		{
+			"sections_avg": 87,
+			"sections_instructor": "friedmann, john"
+		},
+		{
+			"sections_avg": 87,
+			"sections_instructor": "fisher, alexander john"
+		},
+		{
+			"sections_avg": 86.9,
+			"sections_instructor": "madden, john"
+		},
+		{
+			"sections_avg": 86.75,
+			"sections_instructor": "harris, leila;johnson, mark"
+		},
+		{
+			"sections_avg": 86.73,
+			"sections_instructor": "macdonald, john"
+		},
+		{
+			"sections_avg": 86.67,
+			"sections_instructor": "friedmann, john;sandercock, leonie"
+		},
+		{
+			"sections_avg": 86.63,
+			"sections_instructor": "madden, john"
+		},
+		{
+			"sections_avg": 86.57,
+			"sections_instructor": "harder, kenneth;johnson, pauline"
+		},
+		{
+			"sections_avg": 86.54,
+			"sections_instructor": "walker, lawrence john"
+		},
+		{
+			"sections_avg": 86.54,
+			"sections_instructor": "o'brian, john"
+		},
+		{
+			"sections_avg": 86.54,
+			"sections_instructor": "howie, john;mavinic, donald;stiemer, siegfried"
+		},
+		{
+			"sections_avg": 86.5,
+			"sections_instructor": "waterfield, john douglas"
+		},
+		{
+			"sections_avg": 86.5,
+			"sections_instructor": "johnson, james"
+		},
+		{
+			"sections_avg": 86.41,
+			"sections_instructor": "johnson, shelly"
+		},
+		{
+			"sections_avg": 86.32,
+			"sections_instructor": "arefifar, seyed ali;botman, pieter;fels, s sidney;grecu, cristian sorin;kruchten, philippe;lee, terry;lusina, paul;madden, john;najarian, siamak;tang, shuo"
+		},
+		{
+			"sections_avg": 86.31,
+			"sections_instructor": "arefifar, seyed ali;botman, pieter;fels, s sidney;grecu, cristian sorin;kruchten, philippe;lee, terry;lusina, paul;madden, john;najarian, siamak;tang, shuo"
+		},
+		{
+			"sections_avg": 86.29,
+			"sections_instructor": "madden, john"
+		},
+		{
+			"sections_avg": 86.25,
+			"sections_instructor": "read, jesse;van deursen, john"
+		},
+		{
+			"sections_avg": 86.25,
+			"sections_instructor": "bass, john"
+		},
+		{
+			"sections_avg": 86.21,
+			"sections_instructor": "johnston, dawn"
+		},
+		{
+			"sections_avg": 86.14,
+			"sections_instructor": "johnston, charlotte"
+		},
+		{
+			"sections_avg": 86.08,
+			"sections_instructor": "johnson, gregory"
+		},
+		{
+			"sections_avg": 86.05,
+			"sections_instructor": "johnson, shelly"
+		},
+		{
+			"sections_avg": 86,
+			"sections_instructor": "waterfield, john douglas"
+		},
+		{
+			"sections_avg": 86,
+			"sections_instructor": "peacock, stuart;spinelli, john"
+		},
+		{
+			"sections_avg": 86,
+			"sections_instructor": "johnston, richard g"
+		},
+		{
+			"sections_avg": 86,
+			"sections_instructor": "harris, leila;johnson, mark"
+		},
+		{
+			"sections_avg": 86,
+			"sections_instructor": "friedmann, john;sandercock, leonie"
+		},
+		{
+			"sections_avg": 86,
+			"sections_instructor": "au, nicholas;broady, raewyn;bruyere, helene;carter, cedric john;coupland, robert william;mcnagny, kelly marshall;medvedev, nadejda;schubert, peter;scott, mark;serrano, katherine;vercauteren, suzanne"
+		},
+		{
+			"sections_avg": 85.92,
+			"sections_instructor": "caldwell, john;lee, sandra marjorie"
+		},
+		{
+			"sections_avg": 85.92,
+			"sections_instructor": "arefifar, seyed ali;botman, pieter;fels, s sidney;grecu, cristian sorin;kruchten, philippe;lee, terry;lusina, paul;madden, john;najarian, siamak;tang, shuo"
+		},
+		{
+			"sections_avg": 85.87,
+			"sections_instructor": "casey, brett;dooley, kent;frohlich, jiri;halstead, anne catherine;hill, john stuart;holmes, daniel;keller, bernd;mattman, andre;nimmo, michael;pudek, morris;schreiber, william;tomalty, cheryl;urquhart, nadine;vallance, hilary"
+		},
+		{
+			"sections_avg": 85.81,
+			"sections_instructor": "johnson, mark"
+		},
+		{
+			"sections_avg": 85.75,
+			"sections_instructor": "ganders, fred r;gosline, john"
+		},
+		{
+			"sections_avg": 85.73,
+			"sections_instructor": "madden, john"
+		},
+		{
+			"sections_avg": 85.72,
+			"sections_instructor": "johnson, shelly"
+		},
+		{
+			"sections_avg": 85.71,
+			"sections_instructor": "van deursen, john"
+		},
+		{
+			"sections_avg": 85.6,
+			"sections_instructor": "moore, robert daniel;richardson, john"
+		},
+		{
+			"sections_avg": 85.6,
+			"sections_instructor": "isaacson, michael d;johnson, gregory;staub-french, sheryl"
+		},
+		{
+			"sections_avg": 85.6,
+			"sections_instructor": "howie, john;isaacson, michael d"
+		},
+		{
+			"sections_avg": 85.57,
+			"sections_instructor": "bass, john"
+		},
+		{
+			"sections_avg": 85.56,
+			"sections_instructor": "elwood, kenneth john"
+		},
+		{
+			"sections_avg": 85.55,
+			"sections_instructor": "johnson, gregory"
+		},
+		{
+			"sections_avg": 85.5,
+			"sections_instructor": "cooper, john;heatley, stephen;scholte, tom"
+		},
+		{
+			"sections_avg": 85.47,
+			"sections_instructor": "johnston, richard g"
+		},
+		{
+			"sections_avg": 85.42,
+			"sections_instructor": "taylor, robert;van deursen, john"
+		},
+		{
+			"sections_avg": 85.39,
+			"sections_instructor": "harder, kenneth;johnson, pauline"
+		},
+		{
+			"sections_avg": 85.3,
+			"sections_instructor": "richardson, john"
+		},
+		{
+			"sections_avg": 85.3,
+			"sections_instructor": "bull, gary;nelson, john douglas"
+		},
+		{
+			"sections_avg": 85.22,
+			"sections_instructor": "macdonald, john"
+		},
+		{
+			"sections_avg": 85.17,
+			"sections_instructor": "cheung, wai lung;christensen, villy;close, david;mcallister, murdoch;pauly, daniel;pitcher, tony;sumaila, ussif rashid;trites, andrew;vincent, amanda;walters, carl john"
+		},
+		{
+			"sections_avg": 85.14,
+			"sections_instructor": "robinson, john"
+		},
+		{
+			"sections_avg": 85.08,
+			"sections_instructor": "johnson, gregory"
+		},
+		{
+			"sections_avg": 85.08,
+			"sections_instructor": "caldwell, john;lee, sandra marjorie"
+		},
+		{
+			"sections_avg": 85.04,
+			"sections_instructor": "caldwell, john;lee, sandra marjorie"
+		},
+		{
+			"sections_avg": 85,
+			"sections_instructor": "waterfield, john douglas"
+		},
+		{
+			"sections_avg": 85,
+			"sections_instructor": "moore, robert daniel;richardson, john"
+		},
+		{
+			"sections_avg": 85,
+			"sections_instructor": "johnston, richard g"
+		},
+		{
+			"sections_avg": 84.99,
+			"sections_instructor": "johnson, gregory"
+		},
+		{
+			"sections_avg": 84.94,
+			"sections_instructor": "johnson, gregory"
+		},
+		{
+			"sections_avg": 84.93,
+			"sections_instructor": "de long, deborah;nelson, john douglas"
+		},
+		{
+			"sections_avg": 84.91,
+			"sections_instructor": "nelson, john douglas"
+		},
+		{
+			"sections_avg": 84.91,
+			"sections_instructor": "johnston, judith rae"
+		},
+		{
+			"sections_avg": 84.88,
+			"sections_instructor": "arefifar, seyed ali;botman, pieter;fels, s sidney;grecu, cristian sorin;kruchten, philippe;lee, terry;lusina, paul;madden, john;najarian, siamak;tang, shuo"
+		},
+		{
+			"sections_avg": 84.85,
+			"sections_instructor": "johnston, dawn"
+		},
+		{
+			"sections_avg": 84.85,
+			"sections_instructor": "cooper, john"
+		},
+		{
+			"sections_avg": 84.82,
+			"sections_instructor": "macdonald, john"
+		},
+		{
+			"sections_avg": 84.82,
+			"sections_instructor": "johnston, dawn"
+		},
+		{
+			"sections_avg": 84.82,
+			"sections_instructor": "johnson, gregory"
+		},
+		{
+			"sections_avg": 84.81,
+			"sections_instructor": "cooper, john"
+		},
+		{
+			"sections_avg": 84.8,
+			"sections_instructor": "cooper, john"
+		},
+		{
+			"sections_avg": 84.75,
+			"sections_instructor": "friedmann, john"
+		},
+		{
+			"sections_avg": 84.75,
+			"sections_instructor": "cooper, john"
+		},
+		{
+			"sections_avg": 84.72,
+			"sections_instructor": "macdonald, john"
+		},
+		{
+			"sections_avg": 84.7,
+			"sections_instructor": "worrall, john"
+		},
+		{
+			"sections_avg": 84.67,
+			"sections_instructor": "o'brian, john"
+		},
+		{
+			"sections_avg": 84.6,
+			"sections_instructor": "johnson, joy louise;rodney, patricia"
+		},
+		{
+			"sections_avg": 84.56,
+			"sections_instructor": "peacock, stuart;spinelli, john"
+		},
+		{
+			"sections_avg": 84.5,
+			"sections_instructor": "macdonald, john"
+		},
+		{
+			"sections_avg": 84.46,
+			"sections_instructor": "johnson, gregory"
+		},
+		{
+			"sections_avg": 84.44,
+			"sections_instructor": "caldwell, john"
+		},
+		{
+			"sections_avg": 84.43,
+			"sections_instructor": "au, nicholas;broady, raewyn;bruyere, helene;carter, cedric john;coupland, robert william;mcnagny, kelly marshall;medvedev, nadejda;schubert, peter;scott, mark;serrano, katherine;vercauteren, suzanne"
+		},
+		{
+			"sections_avg": 84.38,
+			"sections_instructor": "johnston, richard g"
+		},
+		{
+			"sections_avg": 84.36,
+			"sections_instructor": "elwood, kenneth john"
+		},
+		{
+			"sections_avg": 84.33,
+			"sections_instructor": "van deursen, john"
+		},
+		{
+			"sections_avg": 84.3,
+			"sections_instructor": "cooper, john"
+		},
+		{
+			"sections_avg": 84.29,
+			"sections_instructor": "johnson, shelly"
+		},
+		{
+			"sections_avg": 84.27,
+			"sections_instructor": "van deursen, john"
+		},
+		{
+			"sections_avg": 84.25,
+			"sections_instructor": "o'kusky, john;walker, david"
+		},
+		{
+			"sections_avg": 84.25,
+			"sections_instructor": "elwood, kenneth john"
+		},
+		{
+			"sections_avg": 84.21,
+			"sections_instructor": "beatty, john"
+		},
+		{
+			"sections_avg": 84.2,
+			"sections_instructor": "johnson, catherine;mohit, surdas"
+		},
+		{
+			"sections_avg": 84.2,
+			"sections_instructor": "bass, john;macdonald, christopher;soules, matthew"
+		},
+		{
+			"sections_avg": 84.08,
+			"sections_instructor": "bass, john;roecker, inge;satterfield, blair"
+		},
+		{
+			"sections_avg": 84.06,
+			"sections_instructor": "cooper, john"
+		},
+		{
+			"sections_avg": 84.06,
+			"sections_instructor": "au, nicholas;broady, raewyn;bruyere, helene;carter, cedric john;coupland, robert william;mcnagny, kelly marshall;medvedev, nadejda;schubert, peter;scott, mark;serrano, katherine;vercauteren, suzanne"
+		},
+		{
+			"sections_avg": 84,
+			"sections_instructor": "moore, robert daniel;richardson, john"
+		},
+		{
+			"sections_avg": 84,
+			"sections_instructor": "littleford, james;nesselroad, brian;van deursen, john"
+		},
+		{
+			"sections_avg": 83.93,
+			"sections_instructor": "cooper, john"
+		},
+		{
+			"sections_avg": 83.91,
+			"sections_instructor": "dooley, kent;frohlich, jiri;hill, john stuart;holmes, daniel;keller, bernd;mattman, andre;monsalve, maria victoria;nimmo, michael;pudek, morris;schreiber, william;tomalty, cheryl;vallance, hilary"
+		},
+		{
+			"sections_avg": 83.89,
+			"sections_instructor": "bull, gary;nelson, john douglas"
+		},
+		{
+			"sections_avg": 83.88,
+			"sections_instructor": "ivanochko, tara;johnson, mark"
+		},
+		{
+			"sections_avg": 83.86,
+			"sections_instructor": "robinson, john"
+		},
+		{
+			"sections_avg": 83.85,
+			"sections_instructor": "ansermino, john mark;barr, alasdair;bernatchez, pascal;bhagavatula, sastry;choi, peter tsz lung;etminan, mahyar;griesdale, donald e;hackett, tillie-louise;horne, andrew;laher, ismail;preston, roanne;schwarz, stephan;warriner, charles brian;wright, james"
+		},
+		{
+			"sections_avg": 83.8,
+			"sections_instructor": "johnson, pauline"
+		},
+		{
+			"sections_avg": 83.75,
+			"sections_instructor": "fannin, r jonathan;howie, john;taiebat, mahdi;wijewickreme, dharmapriya"
+		},
+		{
+			"sections_avg": 83.73,
+			"sections_instructor": "isaacson, michael d;johnson, gregory;staub-french, sheryl"
+		},
+		{
+			"sections_avg": 83.71,
+			"sections_instructor": "bass, john;gates, joanne;roecker, inge"
+		},
+		{
+			"sections_avg": 83.68,
+			"sections_instructor": "steeves, john"
+		},
+		{
+			"sections_avg": 83.68,
+			"sections_instructor": "beatty, john"
+		},
+		{
+			"sections_avg": 83.56,
+			"sections_instructor": "peacock, stuart;spinelli, john"
+		},
+		{
+			"sections_avg": 83.5,
+			"sections_instructor": "van deursen, john"
+		},
+		{
+			"sections_avg": 83.5,
+			"sections_instructor": "o'kusky, john;walker, david"
+		},
+		{
+			"sections_avg": 83.47,
+			"sections_instructor": "johnson, gregory"
+		},
+		{
+			"sections_avg": 83.42,
+			"sections_instructor": "howie, john;wijewickreme, dharmapriya"
+		},
+		{
+			"sections_avg": 83.39,
+			"sections_instructor": "elwood, kenneth john"
+		},
+		{
+			"sections_avg": 83.33,
+			"sections_instructor": "johnson, catherine"
+		},
+		{
+			"sections_avg": 83.12,
+			"sections_instructor": "nelson, john douglas"
+		},
+		{
+			"sections_avg": 83.04,
+			"sections_instructor": "johnson, shelly"
+		},
+		{
+			"sections_avg": 83.04,
+			"sections_instructor": "berube, pierre;isaacson, michael d;johnson, gregory"
+		},
+		{
+			"sections_avg": 83,
+			"sections_instructor": "waterfield, john douglas"
+		},
+		{
+			"sections_avg": 83,
+			"sections_instructor": "friedmann, john"
+		},
+		{
+			"sections_avg": 82.93,
+			"sections_instructor": "macdonald, john"
+		},
+		{
+			"sections_avg": 82.81,
+			"sections_instructor": "johnson, carl"
+		},
+		{
+			"sections_avg": 82.8,
+			"sections_instructor": "waterfield, john douglas"
+		},
+		{
+			"sections_avg": 82.8,
+			"sections_instructor": "regier, dean;spinelli, john"
+		},
+		{
+			"sections_avg": 82.8,
+			"sections_instructor": "bass, john"
+		},
+		{
+			"sections_avg": 82.78,
+			"sections_instructor": "macdonald, john"
+		},
+		{
+			"sections_avg": 82.76,
+			"sections_instructor": "ansermino, john mark;barr, alasdair;bernatchez, pascal;bhagavatula, sastry;choi, peter tsz lung;etminan, mahyar;fedida, david;griesdale, donald e;hackett, tillie-louise;horne, andrew;kurata, harley;laher, ismail;preston, roanne;schwarz, stephan;walker, michael j a;warriner, charles brian;wright, james"
+		},
+		{
+			"sections_avg": 82.7,
+			"sections_instructor": "beatty, john henry"
+		},
+		{
+			"sections_avg": 82.69,
+			"sections_instructor": "johnson, shelly"
+		},
+		{
+			"sections_avg": 82.6,
+			"sections_instructor": "richardson, john"
+		},
+		{
+			"sections_avg": 82.52,
+			"sections_instructor": "johnson, gregory"
+		},
+		{
+			"sections_avg": 82.5,
+			"sections_instructor": "kion, tracy;nomellini, john"
+		},
+		{
+			"sections_avg": 82.44,
+			"sections_instructor": "robinson, john;satterfield, theresa"
+		},
+		{
+			"sections_avg": 82.44,
+			"sections_instructor": "johnson, phyllis"
+		},
+		{
+			"sections_avg": 82.44,
+			"sections_instructor": "johnson, gregory"
+		},
+		{
+			"sections_avg": 82.41,
+			"sections_instructor": "johnson, lee"
+		},
+		{
+			"sections_avg": 82.38,
+			"sections_instructor": "atwater, james;howie, john;lence, barbara jean;ventura, carlos estuardo"
+		},
+		{
+			"sections_avg": 82.35,
+			"sections_instructor": "o'brian, john"
+		},
+		{
+			"sections_avg": 82.33,
+			"sections_instructor": "howie, john;wijewickreme, dharmapriya"
+		},
+		{
+			"sections_avg": 82.3,
+			"sections_instructor": "johnson, shelly"
+		},
+		{
+			"sections_avg": 82.29,
+			"sections_instructor": "bull, gary;nelson, john douglas"
+		},
+		{
+			"sections_avg": 82.26,
+			"sections_instructor": "meech, john"
+		},
+		{
+			"sections_avg": 82.25,
+			"sections_instructor": "cole, raymond john"
+		},
+		{
+			"sections_avg": 82.21,
+			"sections_instructor": "robinson, john"
+		},
+		{
+			"sections_avg": 82.21,
+			"sections_instructor": "au, nicholas;bruyere, helene;carter, cedric john;conway, edward;mcnagny, kelly marshall;medvedev, nadejda;roland, kristine;schubert, peter;scott, mark;skinnider, brian;vercauteren, suzanne"
+		},
+		{
+			"sections_avg": 82.18,
+			"sections_instructor": "howie, john;johnson, gregory;lo, kwang victor;ventura, carlos estuardo"
+		},
+		{
+			"sections_avg": 82.13,
+			"sections_instructor": "fannin, r jonathan;howie, john;shuttle, dawn;wijewickreme, dharmapriya"
+		},
+		{
+			"sections_avg": 82.13,
+			"sections_instructor": "egan, john patrick"
+		},
+		{
+			"sections_avg": 82.11,
+			"sections_instructor": "johnson, gregory"
+		},
+		{
+			"sections_avg": 82.1,
+			"sections_instructor": "johnson, gregory"
+		},
+		{
+			"sections_avg": 82.1,
+			"sections_instructor": "aldrich, john;celler, anna;duzenli, cheryl;mackay, alexander;tchvialeva, lioudmila;xiang, qing-san"
+		},
+		{
+			"sections_avg": 82.09,
+			"sections_instructor": "innes, john"
+		},
+		{
+			"sections_avg": 82.06,
+			"sections_instructor": "hall, eric;isaacson, michael d;johnson, gregory"
+		},
+		{
+			"sections_avg": 82.04,
+			"sections_instructor": "johnson, carl"
+		},
+		{
+			"sections_avg": 82,
+			"sections_instructor": "ries, john"
+		},
+		{
+			"sections_avg": 82,
+			"sections_instructor": "elwood, kenneth john"
+		},
+		{
+			"sections_avg": 81.97,
+			"sections_instructor": "innes, john"
+		},
+		{
+			"sections_avg": 81.88,
+			"sections_instructor": "affleck, frances;esson, lynne;jackson, cathryn;mislang, jonathan;oliffe, john;rea, gail;valkenier, beverley"
+		},
+		{
+			"sections_avg": 81.76,
+			"sections_instructor": "robinson, john"
+		},
+		{
+			"sections_avg": 81.76,
+			"sections_instructor": "cooper, john"
+		},
+		{
+			"sections_avg": 81.73,
+			"sections_instructor": "johnson, gregory"
+		},
+		{
+			"sections_avg": 81.71,
+			"sections_instructor": "howie, john;taiebat, mahdi;wijewickreme, dharmapriya"
+		},
+		{
+			"sections_avg": 81.67,
+			"sections_instructor": "richardson, john"
+		},
+		{
+			"sections_avg": 81.65,
+			"sections_instructor": "johnson, mark;lipsen, michael"
+		},
+		{
+			"sections_avg": 81.63,
+			"sections_instructor": "bass, john"
+		},
+		{
+			"sections_avg": 81.62,
+			"sections_instructor": "dunham, bruce;jandciu, eric;steeves, john;stewart, jaclyn"
+		},
+		{
+			"sections_avg": 81.6,
+			"sections_instructor": "bi, xiaotao;ellis, naoko;grace, john ross;taghipour, fariborz"
+		},
+		{
+			"sections_avg": 81.59,
+			"sections_instructor": "worrall, john"
+		},
+		{
+			"sections_avg": 81.53,
+			"sections_instructor": "saddler, john"
+		},
+		{
+			"sections_avg": 81.5,
+			"sections_instructor": "sherman, john;steyn, douw gerbrand"
+		},
+		{
+			"sections_avg": 81.49,
+			"sections_instructor": "bass, john;pechet, bill;satterfield, blair"
+		},
+		{
+			"sections_avg": 81.47,
+			"sections_instructor": "o'kusky, john;walker, david"
+		},
+		{
+			"sections_avg": 81.47,
+			"sections_instructor": "johnson, gregory"
+		},
+		{
+			"sections_avg": 81.42,
+			"sections_instructor": "johnson, gregory"
+		},
+		{
+			"sections_avg": 81.41,
+			"sections_instructor": "ries, john"
+		},
+		{
+			"sections_avg": 81.37,
+			"sections_instructor": "affleck, frances;oliffe, john"
+		},
+		{
+			"sections_avg": 81.36,
+			"sections_instructor": "bass, john"
+		},
+		{
+			"sections_avg": 81.31,
+			"sections_instructor": "johnson, gregory"
+		},
+		{
+			"sections_avg": 81.31,
+			"sections_instructor": "grace, john ross"
+		},
+		{
+			"sections_avg": 81.31,
+			"sections_instructor": "bass, john"
+		},
+		{
+			"sections_avg": 81.3,
+			"sections_instructor": "johnson, gregory"
+		},
+		{
+			"sections_avg": 81.29,
+			"sections_instructor": "johnstone, tiffany"
+		},
+		{
+			"sections_avg": 81.29,
+			"sections_instructor": "elwood, kenneth john"
+		},
+		{
+			"sections_avg": 81.29,
+			"sections_instructor": "beatty, john"
+		},
+		{
+			"sections_avg": 81.27,
+			"sections_instructor": "howie, john;wijewickreme, dharmapriya"
+		},
+		{
+			"sections_avg": 81.25,
+			"sections_instructor": "johnson, kayli;lindenberg, erin"
+		},
+		{
+			"sections_avg": 81.23,
+			"sections_instructor": "johnson, gregory"
+		},
+		{
+			"sections_avg": 81.23,
+			"sections_instructor": "howie, john"
+		},
+		{
+			"sections_avg": 81.09,
+			"sections_instructor": "cole, raymond john"
+		},
+		{
+			"sections_avg": 81.07,
+			"sections_instructor": "catungal, john paul"
+		},
+		{
+			"sections_avg": 81.05,
+			"sections_instructor": "steeves, john"
+		},
+		{
+			"sections_avg": 81.03,
+			"sections_instructor": "bass, john;gates, joanne;roecker, inge"
+		},
+		{
+			"sections_avg": 81,
+			"sections_instructor": "van deursen, john"
+		},
+		{
+			"sections_avg": 81,
+			"sections_instructor": "o'brian, john"
+		},
+		{
+			"sections_avg": 81,
+			"sections_instructor": "casey, brett;dooley, kent;frohlich, jiri;halstead, anne catherine;hill, john stuart;holmes, daniel;keller, bernd;mattman, andre;nimmo, michael;pudek, morris;schreiber, william;tomalty, cheryl;urquhart, nadine;vallance, hilary"
+		},
+		{
+			"sections_avg": 80.96,
+			"sections_instructor": "ries, john"
+		},
+		{
+			"sections_avg": 80.95,
+			"sections_instructor": "nelson, john douglas"
+		},
+		{
+			"sections_avg": 80.9,
+			"sections_instructor": "johnson, catherine"
+		},
+		{
+			"sections_avg": 80.89,
+			"sections_instructor": "haggerty, john"
+		},
+		{
+			"sections_avg": 80.86,
+			"sections_instructor": "petkau, a john"
+		},
+		{
+			"sections_avg": 80.79,
+			"sections_instructor": "bull, gary;marshall, peter;nelson, john douglas"
+		},
+		{
+			"sections_avg": 80.79,
+			"sections_instructor": "affleck, frances;jackson, cathryn;marshall, helga;oliffe, john;valkenier, beverley"
+		},
+		{
+			"sections_avg": 80.78,
+			"sections_instructor": "macdonald, john"
+		},
+		{
+			"sections_avg": 80.78,
+			"sections_instructor": "dooley, kent;frohlich, jiri;hill, john stuart;holmes, daniel;mattman, andre;monsalve, maria victoria;nimmo, michael;pudek, morris;schreiber, william;tomalty, cheryl;vallance, hilary"
+		},
+		{
+			"sections_avg": 80.76,
+			"sections_instructor": "johnson, gregory"
+		},
+		{
+			"sections_avg": 80.73,
+			"sections_instructor": "bass, john;neumann, oliver;wagner, george stuart"
+		},
+		{
+			"sections_avg": 80.71,
+			"sections_instructor": "ries, john"
+		},
+		{
+			"sections_avg": 80.7,
+			"sections_instructor": "peacock, stuart;spinelli, john"
+		},
+		{
+			"sections_avg": 80.7,
+			"sections_instructor": "macdonald, john"
+		},
+		{
+			"sections_avg": 80.67,
+			"sections_instructor": "ries, john"
+		},
+		{
+			"sections_avg": 80.67,
+			"sections_instructor": "o'kusky, john"
+		},
+		{
+			"sections_avg": 80.65,
+			"sections_instructor": "macdonald, john"
+		},
+		{
+			"sections_avg": 80.64,
+			"sections_instructor": "berube, pierre;isaacson, michael d;johnson, gregory"
+		},
+		{
+			"sections_avg": 80.61,
+			"sections_instructor": "harris, leila;robinson, john"
+		},
+		{
+			"sections_avg": 80.6,
+			"sections_instructor": "nelson, john douglas"
+		},
+		{
+			"sections_avg": 80.56,
+			"sections_instructor": "bull, gary;marshall, peter;nelson, john douglas"
+		},
+		{
+			"sections_avg": 80.54,
+			"sections_instructor": "bass, john;soules, matthew"
+		},
+		{
+			"sections_avg": 80.5,
+			"sections_instructor": "cooper, john"
+		},
+		{
+			"sections_avg": 80.5,
+			"sections_instructor": "beatty, john henry"
+		},
+		{
+			"sections_avg": 80.47,
+			"sections_instructor": "culbert, john"
+		},
+		{
+			"sections_avg": 80.43,
+			"sections_instructor": "beatty, john"
+		},
+		{
+			"sections_avg": 80.34,
+			"sections_instructor": "bass, john"
+		},
+		{
+			"sections_avg": 80.33,
+			"sections_instructor": "howie, john"
+		},
+		{
+			"sections_avg": 80.25,
+			"sections_instructor": "beatty, john henry"
+		},
+		{
+			"sections_avg": 80.21,
+			"sections_instructor": "johnston, kirsty"
+		},
+		{
+			"sections_avg": 80.19,
+			"sections_instructor": "bass, john;lewis, martin"
+		},
+		{
+			"sections_avg": 80.17,
+			"sections_instructor": "kizhakkedathu, jayachandran;o'kusky, john"
+		},
+		{
+			"sections_avg": 80.17,
+			"sections_instructor": "johnston, kirsty"
+		},
+		{
+			"sections_avg": 80.15,
+			"sections_instructor": "aldrich, john;celler, anna;duzenli, cheryl;mackay, alexander;tchvialeva, lioudmila;xiang, qing-san"
+		},
+		{
+			"sections_avg": 80.13,
+			"sections_instructor": "o'brian, john"
+		},
+		{
+			"sections_avg": 80.12,
+			"sections_instructor": "ries, john"
+		},
+		{
+			"sections_avg": 80.12,
+			"sections_instructor": "johnson, gregory"
+		},
+		{
+			"sections_avg": 80.12,
+			"sections_instructor": "dunham, bruce;jandciu, eric;steeves, john;stewart, jaclyn"
+		},
+		{
+			"sections_avg": 80.11,
+			"sections_instructor": "elwood, kenneth john"
+		},
+		{
+			"sections_avg": 80.09,
+			"sections_instructor": "ries, john"
+		},
+		{
+			"sections_avg": 80.04,
+			"sections_instructor": "nelson, john douglas"
+		},
+		{
+			"sections_avg": 80.02,
+			"sections_instructor": "ries, john"
+		}
+	]
+}
