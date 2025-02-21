@@ -102,12 +102,9 @@ export default class InsightFacade implements IInsightFacade {
 		}
 		const queryValidationHelper: QueryValidation = new QueryValidation(false, "", [], []);
 		const parsedJSON = JSON.parse(JSON.stringify(query));
-		const datasetIDCheck: boolean | string = queryValidationHelper.validateQuery(parsedJSON);
-		if (datasetIDCheck === false) {
-			throw new InsightError("Query format invalid");
-		}
 		const datasetID = String(datasetIDCheck);
 		const queryJSON: Record<string, any> = query;
+        const datasetIDCheck: string = parsedJSON[0].split("_")[0];
 
 		let dataset: Record<any, any> = {};
 		if (this.dataSets[datasetID]) {
